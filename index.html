@@ -104,6 +104,313 @@
             font-weight: 400;
             background: #ffffff;
             color: #000000;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* Dark Mode Variables and Styles */
+        body.dark-mode {
+            background: #0f172a;
+            color: #f1f5f9;
+        }
+
+        body.dark-mode .bg-white {
+            background-color: #1e293b !important;
+        }
+
+        body.dark-mode .bg-gray-50 {
+            background-color: #0f172a !important;
+        }
+
+        body.dark-mode .bg-gray-100 {
+            background-color: #1e293b !important;
+        }
+
+        body.dark-mode .text-gray-900 {
+            color: #f1f5f9 !important;
+        }
+
+        body.dark-mode .text-gray-800 {
+            color: #e2e8f0 !important;
+        }
+
+        body.dark-mode .text-gray-700 {
+            color: #cbd5e1 !important;
+        }
+
+        body.dark-mode .text-gray-600 {
+            color: #94a3b8 !important;
+        }
+
+        body.dark-mode .text-gray-500 {
+            color: #64748b !important;
+        }
+
+        body.dark-mode .text-gray-400 {
+            color: #475569 !important;
+        }
+
+        body.dark-mode .border-gray-200 {
+            border-color: #334155 !important;
+        }
+
+        body.dark-mode .border-gray-100 {
+            border-color: #1e293b !important;
+        }
+
+        body.dark-mode .border-gray-300 {
+            border-color: #475569 !important;
+        }
+
+        body.dark-mode .border-gray-800 {
+            border-color: #334155 !important;
+        }
+
+        body.dark-mode .shadow-sm,
+        body.dark-mode .shadow-md,
+        body.dark-mode .shadow-lg,
+        body.dark-mode .shadow-xl,
+        body.dark-mode .shadow-2xl {
+            box-shadow: 0 0 0 rgba(0, 0, 0, 0) !important;
+        }
+
+        body.dark-mode .card {
+            background: #1e293b;
+            border-color: #334155;
+        }
+
+        body.dark-mode .category-btn {
+            background: #1e293b;
+            color: #cbd5e1;
+            border-color: #334155;
+        }
+
+        body.dark-mode .category-btn:hover {
+            background: #334155;
+        }
+
+        body.dark-mode .category-btn.active {
+            background: #4299e1;
+            color: white;
+        }
+
+        /* Dark Mode - Designers (Purple) */
+        body.dark-mode .category-btn-designers {
+            background: rgba(168, 85, 247, 0.15);
+            color: #E9D5FF;
+            border-color: rgba(168, 85, 247, 0.4);
+        }
+
+        body.dark-mode .category-btn-designers.active,
+        body.dark-mode .category-btn-designers:hover {
+            background: rgba(168, 85, 247, 0.25);
+            border-color: #A855F7;
+            box-shadow: 0 0 20px rgba(168, 85, 247, 0.3), inset 0 0 12px rgba(168, 85, 247, 0.2);
+            color: #F3E8FF;
+        }
+
+        /* Dark Mode - Developers (Teal) */
+        body.dark-mode .category-btn-developers {
+            background: rgba(45, 212, 191, 0.15);
+            color: #CCFBF1;
+            border-color: rgba(45, 212, 191, 0.4);
+        }
+
+        body.dark-mode .category-btn-developers.active,
+        body.dark-mode .category-btn-developers:hover {
+            background: rgba(45, 212, 191, 0.25);
+            border-color: #2DD4BF;
+            box-shadow: 0 0 20px rgba(45, 212, 191, 0.3), inset 0 0 12px rgba(45, 212, 191, 0.2);
+            color: #F0FDFA;
+        }
+
+        /* Dark Mode - Managers (Red) */
+        body.dark-mode .category-btn-managers {
+            background: rgba(248, 113, 113, 0.15);
+            color: #FECACA;
+            border-color: rgba(248, 113, 113, 0.4);
+        }
+
+        body.dark-mode .category-btn-managers.active,
+        body.dark-mode .category-btn-managers:hover {
+            background: rgba(248, 113, 113, 0.25);
+            border-color: #F87171;
+            box-shadow: 0 0 20px rgba(248, 113, 113, 0.3), inset 0 0 12px rgba(248, 113, 113, 0.2);
+            color: #FEE2E2;
+        }
+
+        /* Dark Mode - Marketers (Pink) */
+        body.dark-mode .category-btn-marketers {
+            background: rgba(244, 114, 182, 0.15);
+            color: #FBCFE8;
+            border-color: rgba(244, 114, 182, 0.4);
+        }
+
+        body.dark-mode .category-btn-marketers.active,
+        body.dark-mode .category-btn-marketers:hover {
+            background: rgba(244, 114, 182, 0.25);
+            border-color: #F472B6;
+            box-shadow: 0 0 20px rgba(244, 114, 182, 0.3), inset 0 0 12px rgba(244, 114, 182, 0.2);
+            color: #FCE7F3;
+        }
+
+        /* Dark Mode - Teachers (Blue) */
+        body.dark-mode .category-btn-teachers {
+            background: rgba(96, 165, 250, 0.15);
+            color: #DBEAFE;
+            border-color: rgba(96, 165, 250, 0.4);
+        }
+
+        body.dark-mode .category-btn-teachers.active,
+        body.dark-mode .category-btn-teachers:hover {
+            background: rgba(96, 165, 250, 0.25);
+            border-color: #60A5FA;
+            box-shadow: 0 0 20px rgba(96, 165, 250, 0.3), inset 0 0 12px rgba(96, 165, 250, 0.2);
+            color: #EFF6FF;
+        }
+
+        /* Dark Mode - Videographers (Orange) */
+        body.dark-mode .category-btn-videographers {
+            background: rgba(251, 146, 60, 0.15);
+            color: #FED7AA;
+            border-color: rgba(251, 146, 60, 0.4);
+        }
+
+        body.dark-mode .category-btn-videographers.active,
+        body.dark-mode .category-btn-videographers:hover {
+            background: rgba(251, 146, 60, 0.25);
+            border-color: #FB923C;
+            box-shadow: 0 0 20px rgba(251, 146, 60, 0.3), inset 0 0 12px rgba(251, 146, 60, 0.2);
+            color: #FFEDD5;
+        }
+
+        /* Dark Mode - All Categories */
+        body.dark-mode .category-btn-all {
+            background: rgba(148, 163, 184, 0.15);
+            color: #CBD5E1;
+            border-color: rgba(148, 163, 184, 0.4);
+        }
+
+        body.dark-mode .category-btn-all.active,
+        body.dark-mode .category-btn-all:hover {
+            background: rgba(148, 163, 184, 0.25);
+            border-color: #94A3B8;
+            box-shadow: 0 0 20px rgba(148, 163, 184, 0.3), inset 0 0 12px rgba(148, 163, 184, 0.2);
+            color: #F1F5F9;
+        }
+
+        body.dark-mode .header-icon-btn,
+        body.dark-mode .header-cta-btn {
+            background: #1e293b;
+            color: #cbd5e1;
+            border-color: #334155;
+        }
+
+        body.dark-mode .header-icon-btn:hover,
+        body.dark-mode .header-cta-btn:hover {
+            background: #334155;
+        }
+
+        body.dark-mode footer {
+            background: #0f172a !important;
+            border-color: #334155 !important;
+        }
+
+        body.dark-mode .modal-content {
+            background: #1e293b;
+            border-color: #334155;
+        }
+
+        body.dark-mode .modal-title {
+            color: #f1f5f9 !important;
+        }
+
+        body.dark-mode .modal-close {
+            color: #94a3b8 !important;
+        }
+
+        body.dark-mode .modal-close:hover {
+            color: #f1f5f9 !important;
+            background: rgba(255, 255, 255, 0.1) !important;
+        }
+
+        body.dark-mode .modal-item {
+            color: #cbd5e1;
+            background: rgba(255, 255, 255, 0.05);
+            border-color: #334155;
+        }
+
+        body.dark-mode .modal-item:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: #475569;
+        }
+
+        body.dark-mode .modal-item-title {
+            color: #f1f5f9 !important;
+        }
+
+        body.dark-mode .modal-item-subtitle {
+            color: #94a3b8 !important;
+        }
+
+        body.dark-mode .modal-item-arrow {
+            color: #64748b !important;
+        }
+
+        body.dark-mode .modal-item:hover .modal-item-arrow {
+            color: #94a3b8 !important;
+        }
+
+        body.dark-mode .modal-item-icon {
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        body.dark-mode .modal-description {
+            color: #94a3b8 !important;
+        }
+
+        body.dark-mode .task-item,
+        body.dark-mode .tool-item {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: #334155;
+        }
+
+        body.dark-mode .task-title,
+        body.dark-mode .tool-title {
+            color: #f1f5f9;
+        }
+
+        body.dark-mode .task-description,
+        body.dark-mode .tool-description {
+            color: #94a3b8;
+        }
+
+        body.dark-mode .skill-name {
+            color: #f1f5f9 !important;
+        }
+
+        body.dark-mode .skill-details {
+            color: #94a3b8 !important;
+        }
+
+        body.dark-mode .skill-percentage {
+            color: #cbd5e1 !important;
+        }
+
+        body.dark-mode .progress-text {
+            color: #f1f5f9 !important;
+        }
+
+        body.dark-mode .skill-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: #334155;
+        }
+
+        body.dark-mode .skill-progress-bar {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        body.dark-mode .mastery-progress {
+            background: rgba(255, 255, 255, 0.1);
         }
 
         /* Typography Classes */
@@ -257,6 +564,114 @@
 
         .smooth-transition {
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Header Button Styles */
+        .text-primary-gradient {
+            background: linear-gradient(135deg, #4299e1 0%, #3182ce 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+            animation: fadeIn 0.6s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        header h1 {
+            animation: fadeIn 0.6s ease-in;
+        }
+
+        .header-icon-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            background: transparent;
+            border: 1px solid #e5e7eb;
+            color: #6b7280;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .header-icon-btn:hover {
+            background: #f3f4f6;
+            border-color: #4299e1;
+            color: #4299e1;
+            transform: translateY(-1px);
+        }
+
+        .header-icon-btn:active {
+            transform: translateY(0);
+        }
+
+        .header-cta-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            border-radius: 8px;
+            background: white;
+            border: 1px solid #e5e7eb;
+            color: #374151;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+        }
+
+        .header-cta-btn:hover {
+            background: #4299e1;
+            border-color: #4299e1;
+            color: white;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(66, 153, 225, 0.3);
+        }
+
+        .header-cta-btn:active {
+            transform: translateY(0);
+            box-shadow: 0 1px 2px rgba(66, 153, 225, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .header-cta-btn {
+                padding: 10px 16px;
+                font-size: 13px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .header-cta-btn {
+                width: 40px;
+                height: 40px;
+                padding: 0;
+                justify-content: center;
+                gap: 0;
+            }
+            
+            .header-cta-btn span {
+                display: none;
+            }
+            
+            h1 {
+                font-size: 20px;
+            }
         }
 
         /* Glass Card */
@@ -443,8 +858,8 @@
 
         /* Category Buttons */
         .category-btn {
-            padding: 12px 40px;
-            border-radius: 12px;
+            padding: 12px 50px;
+            border-radius: 8px;
             font-size: 14px;
             font-weight: 500;
             border: 2px solid transparent;
@@ -686,7 +1101,7 @@
         /* LIQUID GLASS BUTTON EFFECT - FOR MODAL BUTTONS AND TAGS */
         .liquid-glass-btn {
             position: relative;
-            padding: 10px 10px;
+            padding: 10px 8px;
             background: linear-gradient(
                 135deg,
                 rgba(255, 255, 255, 0.15) 0%,
@@ -697,7 +1112,7 @@
             border: 1px solid rgba(255, 255, 255, 0.25);
             border-radius: 8px;
             color: white;
-            font-size: 13px;
+            font-size: 12px;
             font-weight: 700;
             text-align: center;
             cursor: pointer;
@@ -707,6 +1122,9 @@
                 0 8px 32px rgba(0, 0, 0, 0.15),
                 inset 0 1px 0 rgba(255, 255, 255, 0.3),
                 inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         /* Liquid glass tag variant for smaller tags */
@@ -883,13 +1301,13 @@
         }
 
         .modal-content {
-            background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+            background: linear-gradient(135deg, #ffffff 0%, #f7fafc 100%);
             border-radius: 16px;
             width: 90vw;
             max-width: 420px;
             padding: 0;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+            border: 1px solid rgba(0, 0, 0, 0.1);
         }
 
         .modal-header {
@@ -897,20 +1315,20 @@
             justify-content: space-between;
             align-items: center;
             padding: 18px 20px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
         }
 
         .modal-title {
             font-size: 20px;
             font-weight: 700;
-            color: white;
+            color: #1a202c;
             margin: 0;
         }
 
         .modal-close {
             background: transparent;
             border: none;
-            color: rgba(255, 255, 255, 0.7);
+            color: #718096;
             cursor: pointer;
             padding: 8px;
             display: flex;
@@ -921,8 +1339,8 @@
         }
 
         .modal-close:hover {
-            color: white;
-            background: rgba(255, 255, 255, 0.1);
+            color: #1a202c;
+            background: rgba(0, 0, 0, 0.05);
         }
 
         .modal-body {
@@ -934,12 +1352,12 @@
             align-items: center;
             gap: 12px;
             padding: 14px;
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba(0, 0, 0, 0.02);
             border-radius: 10px;
             margin-bottom: 10px;
             cursor: pointer;
             transition: all 0.3s ease;
-            border: 1px solid rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(0, 0, 0, 0.06);
         }
 
         .modal-item:last-child {
@@ -947,15 +1365,15 @@
         }
 
         .modal-item:hover {
-            background: rgba(255, 255, 255, 0.08);
-            border-color: rgba(255, 255, 255, 0.1);
+            background: rgba(0, 0, 0, 0.04);
+            border-color: rgba(0, 0, 0, 0.1);
             transform: translateX(4px);
         }
 
         .modal-item-icon {
             width: 48px;
             height: 48px;
-            background: rgba(255, 255, 255, 0.08);
+            background: rgba(0, 0, 0, 0.04);
             border-radius: 10px;
             display: flex;
             align-items: center;
@@ -971,33 +1389,33 @@
         .modal-item-title {
             font-size: 16px;
             font-weight: 600;
-            color: white;
+            color: #1a202c;
             margin: 0 0 4px 0;
         }
 
         .modal-item-subtitle {
             font-size: 13px;
-            color: rgba(255, 255, 255, 0.6);
+            color: #718096;
             margin: 0;
         }
 
         .modal-item-arrow {
-            color: rgba(255, 255, 255, 0.4);
+            color: #a0aec0;
             flex-shrink: 0;
             transition: transform 0.3s ease, color 0.3s ease;
         }
 
         .modal-item:hover .modal-item-arrow {
-            color: rgba(255, 255, 255, 0.8);
+            color: #4a5568;
             transform: translateX(4px);
         }
 
         /* Custom grid for buttons with more space for Responsibilities */
         .buttons-grid {
             display: grid;
-            grid-template-columns: 1fr 1.5fr 1fr 1fr;
+            grid-template-columns: 0.85fr 1.7fr 0.85fr 0.85fr;
             gap: 8px;
-            margin-bottom: 16px;
+            margin-bottom: 0;
         }
 
         /* Task Item Styles */
@@ -1006,10 +1424,10 @@
             align-items: flex-start;
             gap: 12px;
             padding: 14px;
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba(0, 0, 0, 0.02);
             border-radius: 10px;
             margin-bottom: 10px;
-            border: 1px solid rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(0, 0, 0, 0.06);
         }
 
         .task-item:last-child {
@@ -1034,13 +1452,13 @@
         .task-title {
             font-size: 16px;
             font-weight: 600;
-            color: white;
+            color: #1a202c;
             margin: 0 0 6px 0;
         }
 
         .task-description {
             font-size: 13px;
-            color: rgba(255, 255, 255, 0.6);
+            color: #718096;
             margin: 0 0 10px 0;
             line-height: 1.4;
         }
@@ -1066,10 +1484,10 @@
             align-items: flex-start;
             gap: 12px;
             padding: 14px;
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba(0, 0, 0, 0.02);
             border-radius: 10px;
             margin-bottom: 10px;
-            border: 1px solid rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(0, 0, 0, 0.06);
         }
 
         .tool-item:last-of-type {
@@ -1094,13 +1512,13 @@
         .tool-title {
             font-size: 16px;
             font-weight: 600;
-            color: white;
+            color: #1a202c;
             margin: 0 0 3px 0;
         }
 
         .tool-description {
             font-size: 13px;
-            color: rgba(255, 255, 255, 0.6);
+            color: #718096;
             margin: 0 0 10px 0;
         }
 
@@ -1108,7 +1526,7 @@
             position: relative;
             width: 100%;
             height: 6px;
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(0, 0, 0, 0.08);
             border-radius: 3px;
             overflow: visible;
         }
@@ -1125,15 +1543,15 @@
             top: -20px;
             font-size: 12px;
             font-weight: 600;
-            color: white;
+            color: #1a202c;
         }
 
         /* Mastery Section Styles */
         .mastery-section {
-            background: linear-gradient(135deg, rgba(59, 130, 246, 0.15) 0%, rgba(168, 85, 247, 0.15) 100%);
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.25) 0%, rgba(168, 85, 247, 0.25) 100%);
             border-radius: 10px;
             padding: 14px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.3);
         }
 
         .mastery-header {
@@ -1146,21 +1564,21 @@
         .mastery-title {
             font-size: 14px;
             font-weight: 600;
-            color: white;
+            color: #1e293b;
             margin: 0;
         }
 
         .mastery-level {
             font-size: 16px;
             font-weight: 700;
-            color: white;
+            color: #0891b2;
         }
 
         .mastery-progress {
             position: relative;
             width: 100%;
             height: 6px;
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(0, 0, 0, 0.15);
             border-radius: 3px;
             overflow: hidden;
         }
@@ -1208,13 +1626,13 @@
         .skill-name {
             font-size: 16px;
             font-weight: 600;
-            color: white;
+            color: #1a202c;
             margin: 0 0 3px 0;
         }
 
         .skill-details {
             font-size: 12px;
-            color: rgba(255, 255, 255, 0.6);
+            color: rgba(26, 32, 44, 0.7);
             margin: 0;
         }
 
@@ -1227,7 +1645,7 @@
         .skill-progress-bar {
             width: 100%;
             height: 6px;
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(0, 0, 0, 0.1);
             border-radius: 3px;
             overflow: hidden;
         }
@@ -1243,163 +1661,69 @@
 <body>
 
     <!-- Enhanced Header with Better Navigation -->
-    <header class="py-6 bg-white/80 backdrop-blur-md border-b border-gray-100 sticky top-0 z-50">
-        <div class="max-w-[1400px] mx-auto px-8">
+    <header class="py-4 bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm" style="border-top: 3px solid #4299e1;">
+        <div class="max-w-[1800px] mx-auto px-4 md:px-6 lg:px-8">
             <div class="flex items-center justify-between">
-                <!-- Logo -->
-                
-                 <div class="flex items-center gap-3">
-                   <img src="Frame7.png" alt="Remote Employees Logo" class="h-12 w-auto">
-                 </div>
-
-                <!-- Desktop Navigation -->
-                <nav class="hidden md:flex items-center gap-12">
-                    <a href="#" class="text-sm text-gray-600 hover:text-gray-900 smooth-transition">Overview</a>
-                    <a href="#" class="text-sm text-gray-600 hover:text-gray-900 smooth-transition">Browse Talent</a>
-                    <a href="#" class="text-sm text-gray-600 hover:text-gray-900 smooth-transition">How It Works</a>
-                    <a href="#" class="text-sm text-gray-600 hover:text-gray-900 smooth-transition">Pricing</a>
-                    <a href="#" class="text-sm text-gray-600 hover:text-gray-900 smooth-transition">Resources</a>
-                </nav>
-
-                <!-- CTA Buttons -->
-                <div class="hidden md:flex items-center gap-4">
-                    <button class="btn btn-text btn-medium">
-                        Login
-                    </button>
-                    <button class="btn btn-primary btn-medium">
-                        Get Started
-                    </button>
+                <!-- Logo - Left -->
+                <div class="flex items-center">
+                    <img src="../Layer1.png" alt="Remote Employees Logo" class="h-11 w-auto">
                 </div>
 
-                <!-- Mobile Menu -->
-                <button id="mobile-menu-btn" class="md:hidden">
-                    <i data-lucide="menu" class="h-5 w-5"></i>
-                </button>
+                <!-- Centered Title -->
+                <div class="absolute left-1/2 transform -translate-x-1/2 hidden lg:block">
+                    <h1 class="text-3xl font-bold text-gray-900" style="letter-spacing: -0.02em;">
+                        Hire <span class="text-primary-gradient">live</span> professionals
+                    </h1>
+                </div>
+
+                <!-- Right Side Actions -->
+                <div class="flex items-center gap-3">
+                    <!-- Search Button -->
+                    <button class="header-icon-btn" aria-label="Search">
+                        <i data-lucide="search" class="h-5 w-5"></i>
+                    </button>
+
+                    <!-- Share Button -->
+                    <button class="header-icon-btn" aria-label="Share">
+                        <i data-lucide="share-2" class="h-5 w-5"></i>
+                    </button>
+
+                    <!-- Book a Call Button -->
+                    <button class="header-cta-btn">
+                        <span>Book a call</span>
+                        <i data-lucide="phone" class="h-4 w-4"></i>
+                    </button>
+
+                    <!-- Dark/Light Mode Toggle -->
+                    <button class="header-icon-btn" id="theme-toggle" aria-label="Toggle theme">
+                        <i data-lucide="sun" class="h-5 w-5"></i>
+                    </button>
+
+                    <!-- Mobile Menu -->
+                    <button id="mobile-menu-btn" class="header-icon-btn lg:hidden">
+                        <i data-lucide="menu" class="h-5 w-5"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile/Tablet Title -->
+            <div class="flex justify-center mt-3 lg:hidden">
+                <h1 class="text-2xl md:text-3xl font-bold text-gray-900" style="letter-spacing: -0.02em;">
+                    Hire <span class="text-primary-gradient">live</span> professionals
+                </h1>
             </div>
 
             <!-- Mobile Menu Dropdown -->
-            <div id="mobile-menu" class="hidden md:hidden mt-8 space-y-6 pb-6">
-                <a href="#" class="block text-sm text-gray-600">Overview</a>
-                <a href="#" class="block text-sm text-gray-600">Browse Talent</a>
-                <a href="#" class="block text-sm text-gray-600">How It Works</a>
-                <a href="#" class="block text-sm text-gray-600">Pricing</a>
-                <a href="#" class="block text-sm text-gray-600">Resources</a>
-                <div class="pt-4 space-y-4">
-                    <button class="btn btn-text btn-medium btn-block">Login</button>
-                    <button class="btn btn-primary btn-medium btn-block">Get Started</button>
-                </div>
+            <div id="mobile-menu" class="hidden lg:hidden mt-4 pb-2">
+                <!-- Mobile menu content if needed -->
             </div>
         </div>
     </header>
 
-    <!-- Hero Section with Artistic Elements -->
-    <section class="relative py-12 md:py-16 bg-white overflow-hidden mesh-gradient">
-        
-        <!-- Animated Gradient Blobs -->
-        <div class="gradient-blob-1" style="top: -100px; right: 10%;"></div>
-        <div class="gradient-blob-2" style="bottom: -150px; left: 5%;"></div>
-        <div class="gradient-blob-3" style="top: 50%; right: -100px;"></div>
-        
-        <!-- Geometric Shape -->
-        <div class="geometric-shape float-animation" style="top: 10%; right: 15%;"></div>
-        <div class="geometric-shape float-animation" style="bottom: 10%; left: 10%; animation-delay: -3s; width: 250px; height: 250px;"></div>
-
-        <!-- Flowing Ribbon Wave -->
-        <div class="ribbon-wave" style="bottom: 0; opacity: 0.5;"></div>
-
-        <!-- SVG Abstract Shape Decoration -->
-        <div class="absolute top-20 right-10 float-animation" style="animation-delay: -2s;">
-            <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="100" cy="50" r="40" fill="url(#gradient1)" opacity="0.3"/>
-                <circle cx="150" cy="120" r="50" fill="url(#gradient2)" opacity="0.25"/>
-                <circle cx="60" cy="140" r="45" fill="url(#gradient3)" opacity="0.2"/>
-                <defs>
-                    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" style="stop-color:#4299e1;stop-opacity:1" />
-                        <stop offset="100%" style="stop-color:#ed8936;stop-opacity:1" />
-                    </linearGradient>
-                    <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
-                        <stop offset="100%" style="stop-color:#DC2626;stop-opacity:1" />
-                    </linearGradient>
-                    <linearGradient id="gradient3" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" style="stop-color:#0288d1;stop-opacity:1" />
-                        <stop offset="100%" style="stop-color:#4299e1;stop-opacity:1" />
-                    </linearGradient>
-                </defs>
-            </svg>
-        </div>
-
-        <!-- Another Abstract Shape on Left -->
-        <div class="absolute bottom-32 left-16 float-animation" style="animation-delay: -4s;">
-            <svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M90 10 L170 60 L170 130 L90 170 L10 130 L10 60 Z" fill="url(#gradient4)" opacity="0.15"/>
-                <defs>
-                    <linearGradient id="gradient4" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" style="stop-color:#A78BFA;stop-opacity:1" />
-                        <stop offset="100%" style="stop-color:#ed8936;stop-opacity:1" />
-                    </linearGradient>
-                </defs>
-            </svg>
-        </div>
-
-        <!-- Floating Glass Cards as Decorative Elements -->
-        <div class="absolute top-40 left-20 glass-card rounded-2xl p-6 w-48 float-animation hidden lg:block">
-            <div class="flex items-center gap-3 mb-3">
-                <div class="w-10 h-10 rounded-full bg-gradient-to-br from-green-400 to-emerald-600"></div>
-                <div>
-                    <div class="text-xs font-medium text-gray-700">Live Now</div>
-                    <div class="text-lg font-semibold text-gray-900">2,847</div>
-                </div>
-            </div>
-            <div class="text-xs text-gray-500">Active professionals</div>
-        </div>
-
-        <div class="absolute bottom-40 right-24 glass-card rounded-2xl p-6 w-52 float-animation hidden lg:block" style="animation-delay: -2s;">
-            <div class="flex items-center gap-3 mb-3">
-                <div class="w-10 h-10 rounded-full bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
-                    <i data-lucide="trending-up" class="h-5 w-5 text-white"></i>
-                </div>
-                <div>
-                    <div class="text-xs font-medium text-gray-700">Verified</div>
-                    <div class="text-lg font-semibold text-gray-900">100%</div>
-                </div>
-            </div>
-            <div class="text-xs text-gray-500">Success rate</div>
-        </div>
-
-        <div class="max-w-[1400px] mx-auto px-8 relative z-10">
-            <div class="max-w-4xl mx-auto text-center">
-                <div class="inline-block px-4 py-2 bg-purple-50 rounded-full text-xs text-blue-600 font-medium mb-4">
-                    ✨ Connect with 10,000+ verified professionals
-                </div>
-                <h1 class="text-4xl md:text-6xl font-extralight mb-4 tracking-tight leading-[1.1] text-gray-900">
-                    Connect with<br/>
-                    <span class="font-medium bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 bg-clip-text text-transparent">exceptional talent</span>
-                </h1>
-                <p class="text-lg md:text-xl text-gray-500 mb-10 font-light leading-relaxed max-w-2xl mx-auto">
-                    Empowering businesses and individuals with cutting-edge solutions. Find skilled professionals ready to bring your vision to life.
-                </p>
-                
-                <!-- Enhanced Search -->
-                <div class="flex gap-3 max-w-xl mx-auto mb-4">
-                    <input 
-                        type="text" 
-                        placeholder="Search by role, skill, or expertise..." 
-                        class="form-input form-input-large flex-1"
-                    />
-                    <button class="btn btn-primary btn-large">
-                        Search
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Category Filter -->
     <section class="py-6 bg-gray-50 border-y border-gray-100">
-        <div class="px-4">
-            <div class="flex items-center justify-between gap-1">
+        <div class="px-4 md:px-6 lg:px-8 max-w-[1800px] mx-auto">
+            <div class="flex items-center justify-between gap-0.5">
                 <button class="category-btn category-btn-all active" data-category="all">All Categories</button>
                 <button class="category-btn category-btn-designers" data-category="designers">Designers</button>
                 <button class="category-btn category-btn-developers" data-category="developers">Developers</button>
@@ -1412,65 +1736,74 @@
     </section>
 
     <!-- Main Content -->
-    <main class="py-16 px-4 md:px-6 lg:px-8">
-        <div class="mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[1800px] mx-auto">
+    <main class="pt-8 pb-16 px-4 md:px-6 lg:px-8">
+        <div class="max-w-[1800px] mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
                 <!-- Card 1 -->
                 <div class="card overflow-hidden shadow-2xl relative h-[480px]">
                     <div class="image-overlay h-full">
                         <img src="https://www.sideqik.com/wp-content/uploads/2021/12/professional-smiling-esport-gamer-girl-live-stream-2021-08-28-01-21-32-utc-1030x687.jpg" 
-                             alt="John Doe" 
+                             alt="John D." 
                              class="w-full h-full object-cover" />
                         
-                        <!-- LIVE Badge -->
-                        <div class="absolute top-6 left-6">
+                        <!-- Top Bar with LIVE Badge and Action Buttons -->
+                        <div class="absolute top-6 left-6 right-6 flex items-center justify-between">
+                            <!-- LIVE Badge -->
                             <div class="flex items-center gap-2 bg-red-500 text-white px-4 py-2 text-xs font-bold shadow-lg" style="border-radius: 8px;">
                                 <div class="w-2 h-2 bg-white rounded-full animate-pulse"></div>
                                 LIVE
+                            </div>
+
+                            <!-- Action Buttons -->
+                            <div class="flex gap-3">
+                                <button class="bg-emerald-500 hover:bg-emerald-600 text-white px-3 py-1.5 font-bold transition-all shadow-lg text-sm flex items-center gap-1" style="border-radius: 6px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path>
+                                        <circle cx="12" cy="12" r="3"></circle>
+                                    </svg>
+                                    Spectate
+                                </button>
+                                <button class="bg-red-500 hover:bg-red-600 text-white w-9 h-9 rounded-full transition-all shadow-lg flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="white">
+                                        <polygon points="8 5 19 12 8 19 8 5"></polygon>
+                                    </svg>
+                                </button>
                             </div>
                         </div>
 
                         <!-- Bottom Info -->
                         <div class="absolute bottom-0 left-0 right-0 overlay-gradient p-6">
                             <!-- Profile -->
-                            <div class="flex items-center gap-3 mb-4">
-                                <img src="https://i.pravatar.cc/100?img=5" alt="John Doe" class="w-16 h-16 rounded-full border-2 border-white shadow-lg flex-shrink-0" />
+                            <div class="flex items-center gap-3 mb-6">
+                                <img src="https://i.pravatar.cc/100?img=5" alt="John D" class="w-16 h-16 rounded-full border-2 border-white shadow-lg flex-shrink-0" />
                                 <div class="flex-1 min-w-0">
-                                    <h3 class="text-white font-bold text-xl leading-tight mb-1">John Doe</h3>
-                                    <p class="text-gray-200 text-base">Web Developer</p>
+                                    <h3 class="text-white font-bold text-xl leading-tight mb-1">Web Developer</h3>
+                                    <p class="text-gray-200 text-base font-normal">John D</p>
                                 </div>
                                 <div class="flex flex-col items-end flex-shrink-0">
+                                    <p class="text-white text-xl font-bold">1,500 €</p>
                                     <p class="text-white text-base">Full time</p>
-                                    <p class="text-white text-base">1,500 €</p>
                                 </div>
                             </div>
 
-                            <!-- Modal Buttons with Liquid Glass Effect -->
+                            <!-- Modal Buttons with Liquid Glass Effect and Larger Icons -->
                             <div class="buttons-grid">
-                                <button class="liquid-glass-btn">
+                                <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#3b82f6"><path d="M12 0.5L13.5 6.5L12 12.5L10.5 6.5L12 0.5Z"/><path d="M12 11.5L13.5 17.5L12 23.5L10.5 17.5L12 11.5Z"/><path d="M0.5 12L6.5 10.5L12.5 12L6.5 13.5L0.5 12Z"/><path d="M11.5 12L17.5 10.5L23.5 12L17.5 13.5L11.5 12Z"/><path d="M4 4L8 8L4 12L0 8L4 4Z" opacity="0.5"/><path d="M20 4L24 8L20 12L16 8L20 4Z" opacity="0.5"/><path d="M4 12L8 16L4 20L0 16L4 12Z" opacity="0.5"/><path d="M20 12L24 16L20 20L16 16L20 12Z" opacity="0.5"/></svg>
                                     AI
                                 </button>
-                                <button class="liquid-glass-btn">
+                                <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#a855f7"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 10L10.5 12.5L16 7" fill="white"/><line x1="8" y1="16" x2="16" y2="16" stroke="white" stroke-width="2"/></svg>
                                     Responsibilities
                                 </button>
-                                <button class="liquid-glass-btn">
+                                <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f97316"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
                                     Tools
                                 </button>
-                                <button class="liquid-glass-btn">
+                                <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                                     Skills
-                                </button>
-                            </div>
-
-                            <!-- Action Buttons -->
-                            <div class="flex gap-3">
-                                <button class="flex-1 bg-emerald-500 hover:bg-emerald-600 text-white py-2.5 font-bold transition-all shadow-lg text-base" style="border-radius: 8px;">
-                                    Spectate
-                                </button>
-                                <button class="bg-red-500 hover:bg-red-600 text-white w-12 h-12 rounded-full transition-all shadow-lg flex items-center justify-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="white">
-                                        <polygon points="8 5 19 12 8 19 8 5"></polygon>
-                                    </svg>
                                 </button>
                             </div>
                         </div>
@@ -1481,54 +1814,65 @@
                 <div class="card overflow-hidden shadow-2xl relative h-[480px]">
                     <div class="image-overlay h-full">
                         <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=600&h=800&fit=crop" 
-                             alt="Michael Chen" 
+                             alt="Michael C." 
                              class="w-full h-full object-cover" />
                         
-                        <div class="absolute top-6 left-6">
+                        <!-- Top Bar with LIVE Badge and Action Buttons -->
+                        <div class="absolute top-6 left-6 right-6 flex items-center justify-between">
+                            <!-- LIVE Badge -->
                             <div class="flex items-center gap-2 bg-red-500 text-white px-4 py-2 text-xs font-bold shadow-lg" style="border-radius: 8px;">
                                 <div class="w-2 h-2 bg-white rounded-full animate-pulse"></div>
                                 LIVE
+                            </div>
+
+                            <!-- Action Buttons -->
+                            <div class="flex gap-3">
+                                <button class="bg-emerald-500 hover:bg-emerald-600 text-white px-3 py-1.5 font-bold transition-all shadow-lg text-sm flex items-center gap-1" style="border-radius: 6px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path>
+                                        <circle cx="12" cy="12" r="3"></circle>
+                                    </svg>
+                                    Spectate
+                                </button>
+                                <button class="bg-red-500 hover:bg-red-600 text-white w-9 h-9 rounded-full transition-all shadow-lg flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="white">
+                                        <polygon points="8 5 19 12 8 19 8 5"></polygon>
+                                    </svg>
+                                </button>
                             </div>
                         </div>
 
                         <div class="absolute bottom-0 left-0 right-0 overlay-gradient p-6">
                             <!-- Profile -->
-                            <div class="flex items-center gap-3 mb-4">
-                                <img src="https://i.pravatar.cc/100?img=12" alt="Michael Chen" class="w-16 h-16 rounded-full border-2 border-white shadow-lg flex-shrink-0" />
+                            <div class="flex items-center gap-3 mb-6">
+                                <img src="https://i.pravatar.cc/100?img=12" alt="Michael C" class="w-16 h-16 rounded-full border-2 border-white shadow-lg flex-shrink-0" />
                                 <div class="flex-1 min-w-0">
-                                    <h3 class="text-white font-bold text-xl leading-tight mb-1">Michael Chen</h3>
-                                    <p class="text-gray-200 text-base">Full-Stack Developer</p>
+                                    <h3 class="text-white font-bold text-xl leading-tight mb-1">Full-Stack Developer</h3>
+                                    <p class="text-gray-200 text-base font-normal">Michael C</p>
                                 </div>
                                 <div class="flex flex-col items-end flex-shrink-0">
+                                    <p class="text-white text-xl font-bold">2,800 €</p>
                                     <p class="text-white text-base">Full time</p>
-                                    <p class="text-white text-base">2,800 €</p>
                                 </div>
                             </div>
 
-                            <!-- Modal Buttons with Liquid Glass Effect -->
+                            <!-- Modal Buttons with Liquid Glass Effect and Larger Icons -->
                             <div class="buttons-grid">
-                                <button class="liquid-glass-btn">
+                                <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#3b82f6"><path d="M12 0.5L13.5 6.5L12 12.5L10.5 6.5L12 0.5Z"/><path d="M12 11.5L13.5 17.5L12 23.5L10.5 17.5L12 11.5Z"/><path d="M0.5 12L6.5 10.5L12.5 12L6.5 13.5L0.5 12Z"/><path d="M11.5 12L17.5 10.5L23.5 12L17.5 13.5L11.5 12Z"/><path d="M4 4L8 8L4 12L0 8L4 4Z" opacity="0.5"/><path d="M20 4L24 8L20 12L16 8L20 4Z" opacity="0.5"/><path d="M4 12L8 16L4 20L0 16L4 12Z" opacity="0.5"/><path d="M20 12L24 16L20 20L16 16L20 12Z" opacity="0.5"/></svg>
                                     AI
                                 </button>
-                                <button class="liquid-glass-btn">
+                                <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#a855f7"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 10L10.5 12.5L16 7" fill="white"/><line x1="8" y1="16" x2="16" y2="16" stroke="white" stroke-width="2"/></svg>
                                     Responsibilities
                                 </button>
-                                <button class="liquid-glass-btn">
+                                <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f97316"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
                                     Tools
                                 </button>
-                                <button class="liquid-glass-btn">
+                                <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                                     Skills
-                                </button>
-                            </div>
-
-                            <div class="flex gap-3">
-                                <button class="flex-1 bg-emerald-500 hover:bg-emerald-600 text-white py-2.5 font-bold transition-all shadow-lg text-base" style="border-radius: 8px;">
-                                    Spectate
-                                </button>
-                                <button class="bg-red-500 hover:bg-red-600 text-white w-12 h-12 rounded-full transition-all shadow-lg flex items-center justify-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="white">
-                                        <polygon points="8 5 19 12 8 19 8 5"></polygon>
-                                    </svg>
                                 </button>
                             </div>
                         </div>
@@ -1539,54 +1883,65 @@
                 <div class="card overflow-hidden shadow-2xl relative h-[480px]">
                     <div class="image-overlay h-full">
                         <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&h=800&fit=crop" 
-                             alt="Sarah Johnson" 
+                             alt="Sarah J." 
                              class="w-full h-full object-cover" />
                         
-                        <div class="absolute top-6 left-6">
+                        <!-- Top Bar with LIVE Badge and Action Buttons -->
+                        <div class="absolute top-6 left-6 right-6 flex items-center justify-between">
+                            <!-- LIVE Badge -->
                             <div class="flex items-center gap-2 bg-red-500 text-white px-4 py-2 text-xs font-bold shadow-lg" style="border-radius: 8px;">
                                 <div class="w-2 h-2 bg-white rounded-full animate-pulse"></div>
                                 LIVE
+                            </div>
+
+                            <!-- Action Buttons -->
+                            <div class="flex gap-3">
+                                <button class="bg-emerald-500 hover:bg-emerald-600 text-white px-3 py-1.5 font-bold transition-all shadow-lg text-sm flex items-center gap-1" style="border-radius: 6px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path>
+                                        <circle cx="12" cy="12" r="3"></circle>
+                                    </svg>
+                                    Spectate
+                                </button>
+                                <button class="bg-red-500 hover:bg-red-600 text-white w-9 h-9 rounded-full transition-all shadow-lg flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="white">
+                                        <polygon points="8 5 19 12 8 19 8 5"></polygon>
+                                    </svg>
+                                </button>
                             </div>
                         </div>
 
                         <div class="absolute bottom-0 left-0 right-0 overlay-gradient p-6">
                             <!-- Profile -->
-                            <div class="flex items-center gap-3 mb-4">
-                                <img src="https://i.pravatar.cc/100?img=27" alt="Sarah Johnson" class="w-16 h-16 rounded-full border-2 border-white shadow-lg flex-shrink-0" />
+                            <div class="flex items-center gap-3 mb-6">
+                                <img src="https://i.pravatar.cc/100?img=27" alt="Sarah J" class="w-16 h-16 rounded-full border-2 border-white shadow-lg flex-shrink-0" />
                                 <div class="flex-1 min-w-0">
-                                    <h3 class="text-white font-bold text-xl leading-tight mb-1">Sarah Johnson</h3>
-                                    <p class="text-gray-200 text-base">UI/UX Designer</p>
+                                    <h3 class="text-white font-bold text-xl leading-tight mb-1">UI/UX Designer</h3>
+                                    <p class="text-gray-200 text-base font-normal">Sarah J</p>
                                 </div>
                                 <div class="flex flex-col items-end flex-shrink-0">
+                                    <p class="text-white text-xl font-bold">2,200 €</p>
                                     <p class="text-white text-base">Part time</p>
-                                    <p class="text-white text-base">2,200 €</p>
                                 </div>
                             </div>
 
-                            <!-- Modal Buttons with Liquid Glass Effect -->
+                            <!-- Modal Buttons with Liquid Glass Effect and Larger Icons -->
                             <div class="buttons-grid">
-                                <button class="liquid-glass-btn">
+                                <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#3b82f6"><path d="M12 0.5L13.5 6.5L12 12.5L10.5 6.5L12 0.5Z"/><path d="M12 11.5L13.5 17.5L12 23.5L10.5 17.5L12 11.5Z"/><path d="M0.5 12L6.5 10.5L12.5 12L6.5 13.5L0.5 12Z"/><path d="M11.5 12L17.5 10.5L23.5 12L17.5 13.5L11.5 12Z"/><path d="M4 4L8 8L4 12L0 8L4 4Z" opacity="0.5"/><path d="M20 4L24 8L20 12L16 8L20 4Z" opacity="0.5"/><path d="M4 12L8 16L4 20L0 16L4 12Z" opacity="0.5"/><path d="M20 12L24 16L20 20L16 16L20 12Z" opacity="0.5"/></svg>
                                     AI
                                 </button>
-                                <button class="liquid-glass-btn">
+                                <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#a855f7"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 10L10.5 12.5L16 7" fill="white"/><line x1="8" y1="16" x2="16" y2="16" stroke="white" stroke-width="2"/></svg>
                                     Responsibilities
                                 </button>
-                                <button class="liquid-glass-btn">
+                                <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f97316"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
                                     Tools
                                 </button>
-                                <button class="liquid-glass-btn">
+                                <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                                     Skills
-                                </button>
-                            </div>
-
-                            <div class="flex gap-3">
-                                <button class="flex-1 bg-emerald-500 hover:bg-emerald-600 text-white py-2.5 font-bold transition-all shadow-lg text-base" style="border-radius: 8px;">
-                                    Spectate
-                                </button>
-                                <button class="bg-red-500 hover:bg-red-600 text-white w-12 h-12 rounded-full transition-all shadow-lg flex items-center justify-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="white">
-                                        <polygon points="8 5 19 12 8 19 8 5"></polygon>
-                                    </svg>
                                 </button>
                             </div>
                         </div>
@@ -1597,44 +1952,63 @@
                 <div class="card overflow-hidden shadow-2xl relative h-[480px]">
                     <div class="image-overlay h-full">
                         <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=800&fit=crop" 
-                             alt="David Martinez" 
+                             alt="David M." 
                              class="w-full h-full object-cover" />
                         
-                        <div class="absolute top-6 left-6">
+                        <!-- Top Bar with LIVE Badge and Action Buttons -->
+                        <div class="absolute top-6 left-6 right-6 flex items-center justify-between">
+                            <!-- LIVE Badge -->
                             <div class="flex items-center gap-2 bg-red-500 text-white px-4 py-2 text-xs font-bold shadow-lg" style="border-radius: 8px;">
                                 <div class="w-2 h-2 bg-white rounded-full animate-pulse"></div>
                                 LIVE
                             </div>
+
+                            <!-- Action Buttons -->
+                            <div class="flex gap-3">
+                                <button class="bg-emerald-500 hover:bg-emerald-600 text-white px-3 py-1.5 font-bold transition-all shadow-lg text-sm flex items-center gap-1" style="border-radius: 6px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path>
+                                        <circle cx="12" cy="12" r="3"></circle>
+                                    </svg>
+                                    Spectate
+                                </button>
+                                <button class="bg-red-500 hover:bg-red-600 text-white w-9 h-9 rounded-full transition-all shadow-lg flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="white">
+                                        <polygon points="8 5 19 12 8 19 8 5"></polygon>
+                                    </svg>
+                                </button>
+                            </div>
                         </div>
 
                         <div class="absolute bottom-0 left-0 right-0 overlay-gradient p-6">
-                            <div class="flex items-center gap-3 mb-4">
-                                <img src="https://i.pravatar.cc/100?img=33" alt="David Martinez" class="w-16 h-16 rounded-full border-2 border-white shadow-lg flex-shrink-0" />
+                            <div class="flex items-center gap-3 mb-6">
+                                <img src="https://i.pravatar.cc/100?img=33" alt="David M" class="w-16 h-16 rounded-full border-2 border-white shadow-lg flex-shrink-0" />
                                 <div class="flex-1 min-w-0">
-                                    <h3 class="text-white font-bold text-xl leading-tight mb-1">David Martinez</h3>
-                                    <p class="text-gray-200 text-base">Marketing Specialist</p>
+                                    <h3 class="text-white font-bold text-xl leading-tight mb-1">Marketing Specialist</h3>
+                                    <p class="text-gray-200 text-base font-normal">David M</p>
                                 </div>
                                 <div class="flex flex-col items-end flex-shrink-0">
+                                    <p class="text-white text-xl font-bold">2,000 €</p>
                                     <p class="text-white text-base">Full time</p>
-                                    <p class="text-white text-base">2,000 €</p>
                                 </div>
                             </div>
 
                             <div class="buttons-grid">
-                                <button class="liquid-glass-btn">AI</button>
-                                <button class="liquid-glass-btn">Responsibilities</button>
-                                <button class="liquid-glass-btn">Tools</button>
-                                <button class="liquid-glass-btn">Skills</button>
-                            </div>
-
-                            <div class="flex gap-3">
-                                <button class="flex-1 bg-emerald-500 hover:bg-emerald-600 text-white py-2.5 font-bold transition-all shadow-lg text-base" style="border-radius: 8px;">
-                                    Spectate
+                                <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#3b82f6"><path d="M12 0.5L13.5 6.5L12 12.5L10.5 6.5L12 0.5Z"/><path d="M12 11.5L13.5 17.5L12 23.5L10.5 17.5L12 11.5Z"/><path d="M0.5 12L6.5 10.5L12.5 12L6.5 13.5L0.5 12Z"/><path d="M11.5 12L17.5 10.5L23.5 12L17.5 13.5L11.5 12Z"/><path d="M4 4L8 8L4 12L0 8L4 4Z" opacity="0.5"/><path d="M20 4L24 8L20 12L16 8L20 4Z" opacity="0.5"/><path d="M4 12L8 16L4 20L0 16L4 12Z" opacity="0.5"/><path d="M20 12L24 16L20 20L16 16L20 12Z" opacity="0.5"/></svg>
+                                    AI
                                 </button>
-                                <button class="bg-red-500 hover:bg-red-600 text-white w-12 h-12 rounded-full transition-all shadow-lg flex items-center justify-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="white">
-                                        <polygon points="8 5 19 12 8 19 8 5"></polygon>
-                                    </svg>
+                                <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#a855f7"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 10L10.5 12.5L16 7" fill="white"/><line x1="8" y1="16" x2="16" y2="16" stroke="white" stroke-width="2"/></svg>
+                                    Responsibilities
+                                </button>
+                                <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f97316"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                                    Tools
+                                </button>
+                                <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                    Skills
                                 </button>
                             </div>
                         </div>
@@ -1645,44 +2019,63 @@
                 <div class="card overflow-hidden shadow-2xl relative h-[480px]">
                     <div class="image-overlay h-full">
                         <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&h=800&fit=crop" 
-                             alt="Emma Wilson" 
+                             alt="Emma W." 
                              class="w-full h-full object-cover" />
                         
-                        <div class="absolute top-6 left-6">
+                        <!-- Top Bar with LIVE Badge and Action Buttons -->
+                        <div class="absolute top-6 left-6 right-6 flex items-center justify-between">
+                            <!-- LIVE Badge -->
                             <div class="flex items-center gap-2 bg-red-500 text-white px-4 py-2 text-xs font-bold shadow-lg" style="border-radius: 8px;">
                                 <div class="w-2 h-2 bg-white rounded-full animate-pulse"></div>
                                 LIVE
                             </div>
+
+                            <!-- Action Buttons -->
+                            <div class="flex gap-3">
+                                <button class="bg-emerald-500 hover:bg-emerald-600 text-white px-3 py-1.5 font-bold transition-all shadow-lg text-sm flex items-center gap-1" style="border-radius: 6px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path>
+                                        <circle cx="12" cy="12" r="3"></circle>
+                                    </svg>
+                                    Spectate
+                                </button>
+                                <button class="bg-red-500 hover:bg-red-600 text-white w-9 h-9 rounded-full transition-all shadow-lg flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="white">
+                                        <polygon points="8 5 19 12 8 19 8 5"></polygon>
+                                    </svg>
+                                </button>
+                            </div>
                         </div>
 
                         <div class="absolute bottom-0 left-0 right-0 overlay-gradient p-6">
-                            <div class="flex items-center gap-3 mb-4">
-                                <img src="https://i.pravatar.cc/100?img=45" alt="Emma Wilson" class="w-16 h-16 rounded-full border-2 border-white shadow-lg flex-shrink-0" />
+                            <div class="flex items-center gap-3 mb-6">
+                                <img src="https://i.pravatar.cc/100?img=45" alt="Emma W" class="w-16 h-16 rounded-full border-2 border-white shadow-lg flex-shrink-0" />
                                 <div class="flex-1 min-w-0">
-                                    <h3 class="text-white font-bold text-xl leading-tight mb-1">Emma Wilson</h3>
-                                    <p class="text-gray-200 text-base">Data Analyst</p>
+                                    <h3 class="text-white font-bold text-xl leading-tight mb-1">Data Analyst</h3>
+                                    <p class="text-gray-200 text-base font-normal">Emma W</p>
                                 </div>
                                 <div class="flex flex-col items-end flex-shrink-0">
+                                    <p class="text-white text-xl font-bold">2,400 €</p>
                                     <p class="text-white text-base">Full time</p>
-                                    <p class="text-white text-base">2,400 €</p>
                                 </div>
                             </div>
 
                             <div class="buttons-grid">
-                                <button class="liquid-glass-btn">AI</button>
-                                <button class="liquid-glass-btn">Responsibilities</button>
-                                <button class="liquid-glass-btn">Tools</button>
-                                <button class="liquid-glass-btn">Skills</button>
-                            </div>
-
-                            <div class="flex gap-3">
-                                <button class="flex-1 bg-emerald-500 hover:bg-emerald-600 text-white py-2.5 font-bold transition-all shadow-lg text-base" style="border-radius: 8px;">
-                                    Spectate
+                                <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#3b82f6"><path d="M12 0.5L13.5 6.5L12 12.5L10.5 6.5L12 0.5Z"/><path d="M12 11.5L13.5 17.5L12 23.5L10.5 17.5L12 11.5Z"/><path d="M0.5 12L6.5 10.5L12.5 12L6.5 13.5L0.5 12Z"/><path d="M11.5 12L17.5 10.5L23.5 12L17.5 13.5L11.5 12Z"/><path d="M4 4L8 8L4 12L0 8L4 4Z" opacity="0.5"/><path d="M20 4L24 8L20 12L16 8L20 4Z" opacity="0.5"/><path d="M4 12L8 16L4 20L0 16L4 12Z" opacity="0.5"/><path d="M20 12L24 16L20 20L16 16L20 12Z" opacity="0.5"/></svg>
+                                    AI
                                 </button>
-                                <button class="bg-red-500 hover:bg-red-600 text-white w-12 h-12 rounded-full transition-all shadow-lg flex items-center justify-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="white">
-                                        <polygon points="8 5 19 12 8 19 8 5"></polygon>
-                                    </svg>
+                                <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#a855f7"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 10L10.5 12.5L16 7" fill="white"/><line x1="8" y1="16" x2="16" y2="16" stroke="white" stroke-width="2"/></svg>
+                                    Responsibilities
+                                </button>
+                                <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f97316"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                                    Tools
+                                </button>
+                                <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                    Skills
                                 </button>
                             </div>
                         </div>
@@ -1693,44 +2086,63 @@
                 <div class="card overflow-hidden shadow-2xl relative h-[480px]">
                     <div class="image-overlay h-full">
                         <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600&h=800&fit=crop" 
-                             alt="James Brown" 
+                             alt="James B." 
                              class="w-full h-full object-cover" />
                         
-                        <div class="absolute top-6 left-6">
+                        <!-- Top Bar with LIVE Badge and Action Buttons -->
+                        <div class="absolute top-6 left-6 right-6 flex items-center justify-between">
+                            <!-- LIVE Badge -->
                             <div class="flex items-center gap-2 bg-red-500 text-white px-4 py-2 text-xs font-bold shadow-lg" style="border-radius: 8px;">
                                 <div class="w-2 h-2 bg-white rounded-full animate-pulse"></div>
                                 LIVE
                             </div>
+
+                            <!-- Action Buttons -->
+                            <div class="flex gap-3">
+                                <button class="bg-emerald-500 hover:bg-emerald-600 text-white px-3 py-1.5 font-bold transition-all shadow-lg text-sm flex items-center gap-1" style="border-radius: 6px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path>
+                                        <circle cx="12" cy="12" r="3"></circle>
+                                    </svg>
+                                    Spectate
+                                </button>
+                                <button class="bg-red-500 hover:bg-red-600 text-white w-9 h-9 rounded-full transition-all shadow-lg flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="white">
+                                        <polygon points="8 5 19 12 8 19 8 5"></polygon>
+                                    </svg>
+                                </button>
+                            </div>
                         </div>
 
                         <div class="absolute bottom-0 left-0 right-0 overlay-gradient p-6">
-                            <div class="flex items-center gap-3 mb-4">
-                                <img src="https://i.pravatar.cc/100?img=15" alt="James Brown" class="w-16 h-16 rounded-full border-2 border-white shadow-lg flex-shrink-0" />
+                            <div class="flex items-center gap-3 mb-6">
+                                <img src="https://i.pravatar.cc/100?img=15" alt="James B." class="w-16 h-16 rounded-full border-2 border-white shadow-lg flex-shrink-0" />
                                 <div class="flex-1 min-w-0">
-                                    <h3 class="text-white font-bold text-xl leading-tight mb-1">James Brown</h3>
-                                    <p class="text-gray-200 text-base">Project Manager</p>
+                                    <h3 class="text-white font-bold text-xl leading-tight mb-1">Project Manager</h3>
+                                    <p class="text-gray-200 text-base font-normal">James B.</p>
                                 </div>
                                 <div class="flex flex-col items-end flex-shrink-0">
+                                    <p class="text-white text-xl font-bold">3,200 €</p>
                                     <p class="text-white text-base">Full time</p>
-                                    <p class="text-white text-base">3,200 €</p>
                                 </div>
                             </div>
 
                             <div class="buttons-grid">
-                                <button class="liquid-glass-btn">AI</button>
-                                <button class="liquid-glass-btn">Responsibilities</button>
-                                <button class="liquid-glass-btn">Tools</button>
-                                <button class="liquid-glass-btn">Skills</button>
-                            </div>
-
-                            <div class="flex gap-3">
-                                <button class="flex-1 bg-emerald-500 hover:bg-emerald-600 text-white py-2.5 font-bold transition-all shadow-lg text-base" style="border-radius: 8px;">
-                                    Spectate
+                                <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#3b82f6"><path d="M12 0.5L13.5 6.5L12 12.5L10.5 6.5L12 0.5Z"/><path d="M12 11.5L13.5 17.5L12 23.5L10.5 17.5L12 11.5Z"/><path d="M0.5 12L6.5 10.5L12.5 12L6.5 13.5L0.5 12Z"/><path d="M11.5 12L17.5 10.5L23.5 12L17.5 13.5L11.5 12Z"/><path d="M4 4L8 8L4 12L0 8L4 4Z" opacity="0.5"/><path d="M20 4L24 8L20 12L16 8L20 4Z" opacity="0.5"/><path d="M4 12L8 16L4 20L0 16L4 12Z" opacity="0.5"/><path d="M20 12L24 16L20 20L16 16L20 12Z" opacity="0.5"/></svg>
+                                    AI
                                 </button>
-                                <button class="bg-red-500 hover:bg-red-600 text-white w-12 h-12 rounded-full transition-all shadow-lg flex items-center justify-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="white">
-                                        <polygon points="8 5 19 12 8 19 8 5"></polygon>
-                                    </svg>
+                                <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#a855f7"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 10L10.5 12.5L16 7" fill="white"/><line x1="8" y1="16" x2="16" y2="16" stroke="white" stroke-width="2"/></svg>
+                                    Responsibilities
+                                </button>
+                                <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f97316"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                                    Tools
+                                </button>
+                                <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                    Skills
                                 </button>
                             </div>
                         </div>
@@ -1741,44 +2153,63 @@
                 <div class="card overflow-hidden shadow-2xl relative h-[480px]">
                     <div class="image-overlay h-full">
                         <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&h=800&fit=crop" 
-                             alt="Lisa Anderson" 
+                             alt="Lisa A." 
                              class="w-full h-full object-cover" />
                         
-                        <div class="absolute top-6 left-6">
+                        <!-- Top Bar with LIVE Badge and Action Buttons -->
+                        <div class="absolute top-6 left-6 right-6 flex items-center justify-between">
+                            <!-- LIVE Badge -->
                             <div class="flex items-center gap-2 bg-red-500 text-white px-4 py-2 text-xs font-bold shadow-lg" style="border-radius: 8px;">
                                 <div class="w-2 h-2 bg-white rounded-full animate-pulse"></div>
                                 LIVE
                             </div>
+
+                            <!-- Action Buttons -->
+                            <div class="flex gap-3">
+                                <button class="bg-emerald-500 hover:bg-emerald-600 text-white px-3 py-1.5 font-bold transition-all shadow-lg text-sm flex items-center gap-1" style="border-radius: 6px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path>
+                                        <circle cx="12" cy="12" r="3"></circle>
+                                    </svg>
+                                    Spectate
+                                </button>
+                                <button class="bg-red-500 hover:bg-red-600 text-white w-9 h-9 rounded-full transition-all shadow-lg flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="white">
+                                        <polygon points="8 5 19 12 8 19 8 5"></polygon>
+                                    </svg>
+                                </button>
+                            </div>
                         </div>
 
                         <div class="absolute bottom-0 left-0 right-0 overlay-gradient p-6">
-                            <div class="flex items-center gap-3 mb-4">
-                                <img src="https://i.pravatar.cc/100?img=48" alt="Lisa Anderson" class="w-16 h-16 rounded-full border-2 border-white shadow-lg flex-shrink-0" />
+                            <div class="flex items-center gap-3 mb-6">
+                                <img src="https://i.pravatar.cc/100?img=48" alt="Lisa A." class="w-16 h-16 rounded-full border-2 border-white shadow-lg flex-shrink-0" />
                                 <div class="flex-1 min-w-0">
-                                    <h3 class="text-white font-bold text-xl leading-tight mb-1">Lisa Anderson</h3>
-                                    <p class="text-gray-200 text-base">Content Writer</p>
+                                    <h3 class="text-white font-bold text-xl leading-tight mb-1">Content Writer</h3>
+                                    <p class="text-gray-200 text-base font-normal">Lisa A.</p>
                                 </div>
                                 <div class="flex flex-col items-end flex-shrink-0">
+                                    <p class="text-white text-xl font-bold">1,800 €</p>
                                     <p class="text-white text-base">Part time</p>
-                                    <p class="text-white text-base">1,800 €</p>
                                 </div>
                             </div>
 
                             <div class="buttons-grid">
-                                <button class="liquid-glass-btn">AI</button>
-                                <button class="liquid-glass-btn">Responsibilities</button>
-                                <button class="liquid-glass-btn">Tools</button>
-                                <button class="liquid-glass-btn">Skills</button>
-                            </div>
-
-                            <div class="flex gap-3">
-                                <button class="flex-1 bg-emerald-500 hover:bg-emerald-600 text-white py-2.5 font-bold transition-all shadow-lg text-base" style="border-radius: 8px;">
-                                    Spectate
+                                <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#3b82f6"><path d="M12 0.5L13.5 6.5L12 12.5L10.5 6.5L12 0.5Z"/><path d="M12 11.5L13.5 17.5L12 23.5L10.5 17.5L12 11.5Z"/><path d="M0.5 12L6.5 10.5L12.5 12L6.5 13.5L0.5 12Z"/><path d="M11.5 12L17.5 10.5L23.5 12L17.5 13.5L11.5 12Z"/><path d="M4 4L8 8L4 12L0 8L4 4Z" opacity="0.5"/><path d="M20 4L24 8L20 12L16 8L20 4Z" opacity="0.5"/><path d="M4 12L8 16L4 20L0 16L4 12Z" opacity="0.5"/><path d="M20 12L24 16L20 20L16 16L20 12Z" opacity="0.5"/></svg>
+                                    AI
                                 </button>
-                                <button class="bg-red-500 hover:bg-red-600 text-white w-12 h-12 rounded-full transition-all shadow-lg flex items-center justify-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="white">
-                                        <polygon points="8 5 19 12 8 19 8 5"></polygon>
-                                    </svg>
+                                <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#a855f7"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 10L10.5 12.5L16 7" fill="white"/><line x1="8" y1="16" x2="16" y2="16" stroke="white" stroke-width="2"/></svg>
+                                    Responsibilities
+                                </button>
+                                <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f97316"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                                    Tools
+                                </button>
+                                <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                    Skills
                                 </button>
                             </div>
                         </div>
@@ -1789,44 +2220,63 @@
                 <div class="card overflow-hidden shadow-2xl relative h-[480px]">
                     <div class="image-overlay h-full">
                         <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=600&h=800&fit=crop" 
-                             alt="Robert Taylor" 
+                             alt="Robert T." 
                              class="w-full h-full object-cover" />
                         
-                        <div class="absolute top-6 left-6">
+                        <!-- Top Bar with LIVE Badge and Action Buttons -->
+                        <div class="absolute top-6 left-6 right-6 flex items-center justify-between">
+                            <!-- LIVE Badge -->
                             <div class="flex items-center gap-2 bg-red-500 text-white px-4 py-2 text-xs font-bold shadow-lg" style="border-radius: 8px;">
                                 <div class="w-2 h-2 bg-white rounded-full animate-pulse"></div>
                                 LIVE
                             </div>
+
+                            <!-- Action Buttons -->
+                            <div class="flex gap-3">
+                                <button class="bg-emerald-500 hover:bg-emerald-600 text-white px-3 py-1.5 font-bold transition-all shadow-lg text-sm flex items-center gap-1" style="border-radius: 6px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path>
+                                        <circle cx="12" cy="12" r="3"></circle>
+                                    </svg>
+                                    Spectate
+                                </button>
+                                <button class="bg-red-500 hover:bg-red-600 text-white w-9 h-9 rounded-full transition-all shadow-lg flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="white">
+                                        <polygon points="8 5 19 12 8 19 8 5"></polygon>
+                                    </svg>
+                                </button>
+                            </div>
                         </div>
 
                         <div class="absolute bottom-0 left-0 right-0 overlay-gradient p-6">
-                            <div class="flex items-center gap-3 mb-4">
-                                <img src="https://i.pravatar.cc/100?img=59" alt="Robert Taylor" class="w-16 h-16 rounded-full border-2 border-white shadow-lg flex-shrink-0" />
+                            <div class="flex items-center gap-3 mb-6">
+                                <img src="https://i.pravatar.cc/100?img=59" alt="Robert T." class="w-16 h-16 rounded-full border-2 border-white shadow-lg flex-shrink-0" />
                                 <div class="flex-1 min-w-0">
-                                    <h3 class="text-white font-bold text-xl leading-tight mb-1">Robert Taylor</h3>
-                                    <p class="text-gray-200 text-base">DevOps Engineer</p>
+                                    <h3 class="text-white font-bold text-xl leading-tight mb-1">DevOps Engineer</h3>
+                                    <p class="text-gray-200 text-base font-normal">Robert T.</p>
                                 </div>
                                 <div class="flex flex-col items-end flex-shrink-0">
+                                    <p class="text-white text-xl font-bold">3,000 €</p>
                                     <p class="text-white text-base">Full time</p>
-                                    <p class="text-white text-base">3,000 €</p>
                                 </div>
                             </div>
 
                             <div class="buttons-grid">
-                                <button class="liquid-glass-btn">AI</button>
-                                <button class="liquid-glass-btn">Responsibilities</button>
-                                <button class="liquid-glass-btn">Tools</button>
-                                <button class="liquid-glass-btn">Skills</button>
-                            </div>
-
-                            <div class="flex gap-3">
-                                <button class="flex-1 bg-emerald-500 hover:bg-emerald-600 text-white py-2.5 font-bold transition-all shadow-lg text-base" style="border-radius: 8px;">
-                                    Spectate
+                                <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#3b82f6"><path d="M12 0.5L13.5 6.5L12 12.5L10.5 6.5L12 0.5Z"/><path d="M12 11.5L13.5 17.5L12 23.5L10.5 17.5L12 11.5Z"/><path d="M0.5 12L6.5 10.5L12.5 12L6.5 13.5L0.5 12Z"/><path d="M11.5 12L17.5 10.5L23.5 12L17.5 13.5L11.5 12Z"/><path d="M4 4L8 8L4 12L0 8L4 4Z" opacity="0.5"/><path d="M20 4L24 8L20 12L16 8L20 4Z" opacity="0.5"/><path d="M4 12L8 16L4 20L0 16L4 12Z" opacity="0.5"/><path d="M20 12L24 16L20 20L16 16L20 12Z" opacity="0.5"/></svg>
+                                    AI
                                 </button>
-                                <button class="bg-red-500 hover:bg-red-600 text-white w-12 h-12 rounded-full transition-all shadow-lg flex items-center justify-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="white">
-                                        <polygon points="8 5 19 12 8 19 8 5"></polygon>
-                                    </svg>
+                                <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#a855f7"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 10L10.5 12.5L16 7" fill="white"/><line x1="8" y1="16" x2="16" y2="16" stroke="white" stroke-width="2"/></svg>
+                                    Responsibilities
+                                </button>
+                                <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f97316"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                                    Tools
+                                </button>
+                                <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                    Skills
                                 </button>
                             </div>
                         </div>
@@ -1837,44 +2287,63 @@
                 <div class="card overflow-hidden shadow-2xl relative h-[480px]">
                     <div class="image-overlay h-full">
                         <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=600&h=800&fit=crop" 
-                             alt="Sophie Clark" 
+                             alt="Sophie C." 
                              class="w-full h-full object-cover" />
                         
-                        <div class="absolute top-6 left-6">
+                        <!-- Top Bar with LIVE Badge and Action Buttons -->
+                        <div class="absolute top-6 left-6 right-6 flex items-center justify-between">
+                            <!-- LIVE Badge -->
                             <div class="flex items-center gap-2 bg-red-500 text-white px-4 py-2 text-xs font-bold shadow-lg" style="border-radius: 8px;">
                                 <div class="w-2 h-2 bg-white rounded-full animate-pulse"></div>
                                 LIVE
                             </div>
+
+                            <!-- Action Buttons -->
+                            <div class="flex gap-3">
+                                <button class="bg-emerald-500 hover:bg-emerald-600 text-white px-3 py-1.5 font-bold transition-all shadow-lg text-sm flex items-center gap-1" style="border-radius: 6px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path>
+                                        <circle cx="12" cy="12" r="3"></circle>
+                                    </svg>
+                                    Spectate
+                                </button>
+                                <button class="bg-red-500 hover:bg-red-600 text-white w-9 h-9 rounded-full transition-all shadow-lg flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="white">
+                                        <polygon points="8 5 19 12 8 19 8 5"></polygon>
+                                    </svg>
+                                </button>
+                            </div>
                         </div>
 
                         <div class="absolute bottom-0 left-0 right-0 overlay-gradient p-6">
-                            <div class="flex items-center gap-3 mb-4">
-                                <img src="https://i.pravatar.cc/100?img=32" alt="Sophie Clark" class="w-16 h-16 rounded-full border-2 border-white shadow-lg flex-shrink-0" />
+                            <div class="flex items-center gap-3 mb-6">
+                                <img src="https://i.pravatar.cc/100?img=32" alt="Sophie C." class="w-16 h-16 rounded-full border-2 border-white shadow-lg flex-shrink-0" />
                                 <div class="flex-1 min-w-0">
-                                    <h3 class="text-white font-bold text-xl leading-tight mb-1">Sophie Clark</h3>
-                                    <p class="text-gray-200 text-base">Graphic Designer</p>
+                                    <h3 class="text-white font-bold text-xl leading-tight mb-1">Graphic Designer</h3>
+                                    <p class="text-gray-200 text-base font-normal">Sophie C.</p>
                                 </div>
                                 <div class="flex flex-col items-end flex-shrink-0">
+                                    <p class="text-white text-xl font-bold">2,300 €</p>
                                     <p class="text-white text-base">Full time</p>
-                                    <p class="text-white text-base">2,300 €</p>
                                 </div>
                             </div>
 
                             <div class="buttons-grid">
-                                <button class="liquid-glass-btn">AI</button>
-                                <button class="liquid-glass-btn">Responsibilities</button>
-                                <button class="liquid-glass-btn">Tools</button>
-                                <button class="liquid-glass-btn">Skills</button>
-                            </div>
-
-                            <div class="flex gap-3">
-                                <button class="flex-1 bg-emerald-500 hover:bg-emerald-600 text-white py-2.5 font-bold transition-all shadow-lg text-base" style="border-radius: 8px;">
-                                    Spectate
+                                <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#3b82f6"><path d="M12 0.5L13.5 6.5L12 12.5L10.5 6.5L12 0.5Z"/><path d="M12 11.5L13.5 17.5L12 23.5L10.5 17.5L12 11.5Z"/><path d="M0.5 12L6.5 10.5L12.5 12L6.5 13.5L0.5 12Z"/><path d="M11.5 12L17.5 10.5L23.5 12L17.5 13.5L11.5 12Z"/><path d="M4 4L8 8L4 12L0 8L4 4Z" opacity="0.5"/><path d="M20 4L24 8L20 12L16 8L20 4Z" opacity="0.5"/><path d="M4 12L8 16L4 20L0 16L4 12Z" opacity="0.5"/><path d="M20 12L24 16L20 20L16 16L20 12Z" opacity="0.5"/></svg>
+                                    AI
                                 </button>
-                                <button class="bg-red-500 hover:bg-red-600 text-white w-12 h-12 rounded-full transition-all shadow-lg flex items-center justify-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="white">
-                                        <polygon points="8 5 19 12 8 19 8 5"></polygon>
-                                    </svg>
+                                <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#a855f7"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 10L10.5 12.5L16 7" fill="white"/><line x1="8" y1="16" x2="16" y2="16" stroke="white" stroke-width="2"/></svg>
+                                    Responsibilities
+                                </button>
+                                <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f97316"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                                    Tools
+                                </button>
+                                <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                    Skills
                                 </button>
                             </div>
                         </div>
@@ -1948,8 +2417,11 @@
                 <!-- Task 1 -->
                 <div class="task-item">
                     <div class="task-check" style="background: #3b82f6;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="20 6 9 17 4 12"></polyline>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                            <line x1="9" y1="9" x2="15" y2="9"/>
+                            <line x1="9" y1="13" x2="15" y2="13"/>
+                            <line x1="9" y1="17" x2="13" y2="17"/>
                         </svg>
                     </div>
                     <div class="task-content">
@@ -1965,8 +2437,8 @@
                 <!-- Task 2 -->
                 <div class="task-item">
                     <div class="task-check" style="background: #a855f7;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="20 6 9 17 4 12"></polyline>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/>
                         </svg>
                     </div>
                     <div class="task-content">
@@ -1982,8 +2454,12 @@
                 <!-- Task 3 -->
                 <div class="task-item">
                     <div class="task-check" style="background: #ec4899;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="20 6 9 17 4 12"></polyline>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/>
+                            <circle cx="12" cy="8" r="1.5" fill="white"/>
+                            <circle cx="8.5" cy="13.5" r="1.5" fill="white"/>
+                            <circle cx="15.5" cy="13.5" r="1.5" fill="white"/>
+                            <path d="M12 16c-1.5 0-2.5 1-2.5 2.5h5c0-1.5-1-2.5-2.5-2.5z"/>
                         </svg>
                     </div>
                     <div class="task-content">
@@ -2163,168 +2639,16 @@
         </div>
     </div>
 
-    <!-- CTA Section with Artistic Background -->
-    <section class="relative py-16 bg-gradient-to-br from-blue-500 via-blue-400 to-orange-500 overflow-hidden">
-        
-        <!-- Floating Orbs in Background -->
-        <div class="absolute top-20 left-1/3 opacity-30">
-            <div class="w-48 h-48 rounded-full" style="background: linear-gradient(135deg, #63b3ed 0%, #4299e1 100%); animation: float 6s ease-in-out infinite;"></div>
-        </div>
-
-        <div class="absolute top-32 right-1/4 opacity-25">
-            <div class="w-32 h-32 rounded-full" style="background: linear-gradient(135deg, #4299e1 0%, #3182ce 100%); animation: float 8s ease-in-out infinite;"></div>
-        </div>
-
-        <div class="absolute bottom-32 left-1/4 opacity-25">
-            <div class="w-40 h-40 rounded-full" style="background: linear-gradient(135deg, #ed8936 0%, #DC2626 100%); animation: float 10s ease-in-out infinite; animation-delay: -3s;"></div>
-        </div>
-
-        <!-- Wavy Lines Decoration -->
-        <div class="absolute top-0 left-0 w-full opacity-20">
-            <svg width="100%" height="200" viewBox="0 0 1440 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0,100 Q360,20 720,100 T1440,100 L1440,0 L0,0 Z" fill="url(#waveGrad1)"/>
-                <defs>
-                    <linearGradient id="waveGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
-                        <stop offset="0%" style="stop-color:#4299e1;stop-opacity:0.5" />
-                        <stop offset="50%" style="stop-color:#63b3ed;stop-opacity:0.5" />
-                        <stop offset="100%" style="stop-color:#ed8936;stop-opacity:0.5" />
-                    </linearGradient>
-                </defs>
-            </svg>
-        </div>
-
-        <div class="absolute bottom-0 left-0 w-full opacity-20">
-            <svg width="100%" height="200" viewBox="0 0 1440 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0,100 Q360,180 720,100 T1440,100 L1440,200 L0,200 Z" fill="url(#waveGrad2)"/>
-                <defs>
-                    <linearGradient id="waveGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
-                        <stop offset="0%" style="stop-color:#10B981;stop-opacity:0.5" />
-                        <stop offset="50%" style="stop-color:#4299e1;stop-opacity:0.5" />
-                        <stop offset="100%" style="stop-color:#ed8936;stop-opacity:0.5" />
-                    </linearGradient>
-                </defs>
-            </svg>
-        </div>
-
-        <!-- Sparkle/Star Elements -->
-        <div class="absolute top-40 left-1/3 opacity-50">
-            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M15 0L17.5 10L15 15L12.5 10L15 0Z" fill="white"/>
-                <path d="M15 30L17.5 20L15 15L12.5 20L15 30Z" fill="white"/>
-                <path d="M0 15L10 17.5L15 15L10 12.5L0 15Z" fill="white"/>
-                <path d="M30 15L20 17.5L15 15L20 12.5L30 15Z" fill="white"/>
-            </svg>
-        </div>
-
-        <div class="absolute bottom-40 right-1/3 opacity-50">
-            <svg width="25" height="25" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M15 0L17.5 10L15 15L12.5 10L15 0Z" fill="white"/>
-                <path d="M15 30L17.5 20L15 15L12.5 20L15 30Z" fill="white"/>
-                <path d="M0 15L10 17.5L15 15L10 12.5L0 15Z" fill="white"/>
-                <path d="M30 15L20 17.5L15 15L20 12.5L30 15Z" fill="white"/>
-            </svg>
-        </div>
-
-        <div class="absolute top-1/3 right-20 opacity-40">
-            <svg width="20" height="20" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M15 0L17.5 10L15 15L12.5 10L15 0Z" fill="white"/>
-                <path d="M15 30L17.5 20L15 15L12.5 20L15 30Z" fill="white"/>
-                <path d="M0 15L10 17.5L15 15L10 12.5L0 15Z" fill="white"/>
-                <path d="M30 15L20 17.5L15 15L20 12.5L30 15Z" fill="white"/>
-            </svg>
-        </div>
-
-        <!-- Content Container -->
-        <div class="max-w-[1400px] mx-auto px-8 relative z-10">
-            
-            <!-- Main CTA Content -->
-            <div class="max-w-4xl mx-auto text-center mb-10">
-                <div class="inline-block px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-xs text-white font-medium mb-6 border border-white/30">
-                    🚀 Join 5,000+ companies already hiring
-                </div>
-                <h2 class="text-5xl md:text-6xl font-extralight mb-8 tracking-tight leading-tight text-white drop-shadow-lg">
-                    Ready to get started?
-                </h2>
-                <p class="text-lg text-white/90 mb-12 font-light leading-relaxed max-w-2xl mx-auto drop-shadow">
-                    Join thousands of companies connecting with top-tier talent worldwide. Start building your dream team today—no credit card required.
-                </p>
-                <div class="flex items-center justify-center gap-4 flex-wrap mb-12">
-                    <button class="btn btn-large flex items-center gap-2" style="background: white; color: var(--color-primary-main);">
-                        Get Started Free
-                        <i data-lucide="arrow-right" class="h-4 w-4"></i>
-                    </button>
-                    <button class="btn btn-outlined btn-large flex items-center gap-2" style="border-color: white; color: white;">
-                        <i data-lucide="play-circle" class="h-4 w-4"></i>
-                        Watch Demo
-                    </button>
-                </div>
-
-            </div>
-
-            <!-- Stats Grid -->
-            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-                <!-- Stat 1 -->
-                <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 text-center border border-white/20">
-                    <div class="text-3xl font-semibold text-white mb-2">10,000+</div>
-                    <div class="text-sm text-white/80">Verified Professionals</div>
-                </div>
-
-                <!-- Stat 2 -->
-                <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 text-center border border-white/20">
-                    <div class="text-3xl font-semibold text-white mb-2">5,000+</div>
-                    <div class="text-sm text-white/80">Companies Trust Us</div>
-                </div>
-
-                <!-- Stat 3 -->
-                <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 text-center border border-white/20">
-                    <div class="text-3xl font-semibold text-white mb-2">98%</div>
-                    <div class="text-sm text-white/80">Success Rate</div>
-                </div>
-
-                <!-- Stat 4 -->
-                <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 text-center border border-white/20">
-                    <div class="text-3xl font-semibold text-white mb-2">24/7</div>
-                    <div class="text-sm text-white/80">Support Available</div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
     <!-- Muted Sophisticated Footer -->
     <footer class="py-10 bg-gray-900 border-t border-gray-800">
-        <div class="max-w-[1400px] mx-auto px-8">
+        <div class="max-w-[1800px] mx-auto px-4 md:px-6 lg:px-8">
             <!-- Main Footer Content -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12 mb-8">
                 
                 <!-- Brand Column - Spans 2 columns -->
                 <div class="lg:col-span-2">
-                    <div class="flex items-center gap-2 mb-6">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="40" height="40" role="img" aria-label="Remote Employees Logo"> 
-                            <defs> 
-                                <!-- Orange gradient --> 
-                                <linearGradient id="grad-orange-footer" x1="0" y1="0" x2="0" y2="1"> 
-                                    <stop offset="0%" stop-color="#FFA63B"/> 
-                                    <stop offset="100%" stop-color="#F97316"/> 
-                                </linearGradient> 
-                            
-                                <!-- Blue gradient --> 
-                                <linearGradient id="grad-blue-footer" x1="0" y1="0" x2="0" y2="1"> 
-                                    <stop offset="0%" stop-color="#06B6D4"/> 
-                                    <stop offset="100%" stop-color="#3B82F6"/> 
-                                </linearGradient> 
-                            </defs> 
-                            
-                            <!-- Left orange semicircle and triangle --> 
-                            <path d="M0 0v512h512V0H0zm256 64a192 192 0 0 1 0 384H0V0h256z" fill="none"/> 
-                            <path d="M0 0v256c141.4 0 256-114.6 256-256H0z" fill="url(#grad-orange-footer)" /> 
-                            <path d="M0 512V256l256 256H0z" fill="url(#grad-orange-footer)" /> 
-                            
-                            <!-- Right blue rounded bars --> 
-                            <rect x="256" y="64" width="256" height="96" rx="48" ry="48" fill="url(#grad-blue-footer)" /> 
-                            <rect x="256" y="208" width="256" height="96" rx="48" ry="48" fill="url(#grad-blue-footer)" /> 
-                            <rect x="256" y="352" width="256" height="96" rx="48" ry="48" fill="url(#grad-blue-footer)" /> 
-                        </svg>
+                    <div class="flex items-center gap-3 mb-6">
+                        <img src="../Layer1.png" alt="Remote Employees Logo" class="h-11 w-auto">
                         <span class="text-lg font-bold tracking-tight text-gray-100">REMOTE EMPLOYEES</span>
                     </div>
                     <p class="text-sm text-gray-400 mb-8 max-w-xs font-light leading-relaxed">
@@ -2334,7 +2658,7 @@
                     <!-- Newsletter -->
                     <div class="mb-8">
                         <h4 class="text-sm font-medium mb-3 text-gray-300">Stay Updated</h4>
-                        <div class="flex gap-2">
+                        <div class="flex gap-3">
                             <input 
                                 type="email" 
                                 placeholder="Enter your email" 
@@ -2563,7 +2887,40 @@
                 }
             }
         });
+
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        let isDark = localStorage.getItem('darkMode') === 'true';
+        
+        // Apply saved theme on load
+        if (isDark) {
+            document.body.classList.add('dark-mode');
+            if (themeToggle) {
+                const icon = themeToggle.querySelector('i');
+                icon.setAttribute('data-lucide', 'moon');
+                lucide.createIcons();
+            }
+        }
+        
+        if (themeToggle) {
+            themeToggle.addEventListener('click', function() {
+                isDark = !isDark;
+                const icon = this.querySelector('i');
+                
+                if (isDark) {
+                    document.body.classList.add('dark-mode');
+                    icon.setAttribute('data-lucide', 'moon');
+                    localStorage.setItem('darkMode', 'true');
+                } else {
+                    document.body.classList.remove('dark-mode');
+                    icon.setAttribute('data-lucide', 'sun');
+                    localStorage.setItem('darkMode', 'false');
+                }
+                
+                lucide.createIcons();
+            });
+        }
     </script>
 </body>
-
 </html>
+
