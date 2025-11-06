@@ -392,25 +392,22 @@
             color: #94a3b8 !important;
         }
 
-        body.dark-mode .skill-percentage {
-            color: #cbd5e1 !important;
-        }
-
-        body.dark-mode .progress-text {
-            color: #f1f5f9 !important;
-        }
-
         body.dark-mode .skill-card {
             background: rgba(255, 255, 255, 0.05);
             border-color: #334155;
         }
 
-        body.dark-mode .skill-progress-bar {
-            background: rgba(255, 255, 255, 0.1);
+        body.dark-mode .tool-name {
+            color: #f1f5f9 !important;
         }
 
-        body.dark-mode .mastery-progress {
-            background: rgba(255, 255, 255, 0.1);
+        body.dark-mode .tool-details {
+            color: #94a3b8 !important;
+        }
+
+        body.dark-mode .tool-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: #334155;
         }
 
         /* Typography Classes */
@@ -849,9 +846,10 @@
         .overlay-gradient {
             background: linear-gradient(
                 to top,
-                rgba(0, 0, 0, 0.95) 0%,
-                rgba(0, 0, 0, 0.7) 40%,
-                rgba(0, 0, 0, 0.3) 70%,
+                rgba(0, 0, 0, 0.98) 0%,
+                rgba(0, 0, 0, 0.85) 35%,
+                rgba(0, 0, 0, 0.5) 60%,
+                rgba(0, 0, 0, 0.2) 80%,
                 transparent 100%
             );
         }
@@ -1418,25 +1416,27 @@
             margin-bottom: 0;
         }
 
-        /* Task Item Styles */
+        /* Task Item Styles - UPDATED TO MATCH SKILLS STYLE */
         .task-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 12px;
             padding: 14px;
-            background: rgba(0, 0, 0, 0.02);
             border-radius: 10px;
             margin-bottom: 10px;
-            border: 1px solid rgba(0, 0, 0, 0.06);
         }
 
         .task-item:last-child {
             margin-bottom: 0;
         }
 
-        .task-check {
-            width: 36px;
-            height: 36px;
+        .task-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 8px;
+        }
+
+        .task-icon {
+            width: 42px;
+            height: 42px;
             border-radius: 8px;
             display: flex;
             align-items: center;
@@ -1444,7 +1444,7 @@
             flex-shrink: 0;
         }
 
-        .task-content {
+        .task-info {
             flex: 1;
             min-width: 0;
         }
@@ -1453,141 +1453,59 @@
             font-size: 16px;
             font-weight: 600;
             color: #1a202c;
-            margin: 0 0 6px 0;
+            margin: 0 0 3px 0;
         }
 
         .task-description {
-            font-size: 13px;
-            color: #718096;
-            margin: 0 0 10px 0;
+            font-size: 12px;
+            color: rgba(26, 32, 44, 0.7);
+            margin: 0;
             line-height: 1.4;
         }
 
-        .task-tags {
-            display: flex;
-            gap: 6px;
-            flex-wrap: wrap;
-        }
-
-        .task-tag {
-            padding: 5px 10px;
-            border-radius: 5px;
-            font-size: 10px;
-            font-weight: 700;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
-        }
-
-        /* Tool Item Styles */
-        .tool-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 12px;
+        /* Tool Card Styles - MATCHING SKILLS */
+        .tool-card {
             padding: 14px;
-            background: rgba(0, 0, 0, 0.02);
             border-radius: 10px;
             margin-bottom: 10px;
-            border: 1px solid rgba(0, 0, 0, 0.06);
         }
 
-        .tool-item:last-of-type {
-            margin-bottom: 14px;
+        .tool-card:last-child {
+            margin-bottom: 0;
+        }
+
+        .tool-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
         }
 
         .tool-icon {
-            width: 52px;
-            height: 52px;
-            border-radius: 10px;
+            width: 42px;
+            height: 42px;
+            border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
             flex-shrink: 0;
         }
 
-        .tool-content {
+        .tool-info {
             flex: 1;
             min-width: 0;
         }
 
-        .tool-title {
+        .tool-name {
             font-size: 16px;
             font-weight: 600;
             color: #1a202c;
             margin: 0 0 3px 0;
         }
 
-        .tool-description {
-            font-size: 13px;
-            color: #718096;
-            margin: 0 0 10px 0;
-        }
-
-        .progress-container {
-            position: relative;
-            width: 100%;
-            height: 6px;
-            background: rgba(0, 0, 0, 0.08);
-            border-radius: 3px;
-            overflow: visible;
-        }
-
-        .progress-bar {
-            height: 100%;
-            border-radius: 3px;
-            position: relative;
-        }
-
-        .progress-text {
-            position: absolute;
-            right: 0;
-            top: -20px;
+        .tool-details {
             font-size: 12px;
-            font-weight: 600;
-            color: #1a202c;
-        }
-
-        /* Mastery Section Styles */
-        .mastery-section {
-            background: linear-gradient(135deg, rgba(59, 130, 246, 0.25) 0%, rgba(168, 85, 247, 0.25) 100%);
-            border-radius: 10px;
-            padding: 14px;
-            border: 1px solid rgba(59, 130, 246, 0.3);
-        }
-
-        .mastery-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-
-        .mastery-title {
-            font-size: 14px;
-            font-weight: 600;
-            color: #1e293b;
+            color: rgba(26, 32, 44, 0.7);
             margin: 0;
-        }
-
-        .mastery-level {
-            font-size: 16px;
-            font-weight: 700;
-            color: #0891b2;
-        }
-
-        .mastery-progress {
-            position: relative;
-            width: 100%;
-            height: 6px;
-            background: rgba(0, 0, 0, 0.15);
-            border-radius: 3px;
-            overflow: hidden;
-        }
-
-        .mastery-bar {
-            height: 100%;
-            background: linear-gradient(90deg, #3b82f6 0%, #a855f7 100%);
-            border-radius: 3px;
-            width: 90%;
         }
 
         /* Skill Card Styles */
@@ -1605,7 +1523,6 @@
             display: flex;
             align-items: center;
             gap: 12px;
-            margin-bottom: 10px;
         }
 
         .skill-icon {
@@ -1635,26 +1552,6 @@
             color: rgba(26, 32, 44, 0.7);
             margin: 0;
         }
-
-        .skill-percentage {
-            font-size: 18px;
-            font-weight: 700;
-            flex-shrink: 0;
-        }
-
-        .skill-progress-bar {
-            width: 100%;
-            height: 6px;
-            background: rgba(0, 0, 0, 0.1);
-            border-radius: 3px;
-            overflow: hidden;
-        }
-
-        .skill-progress-fill {
-            height: 100%;
-            border-radius: 3px;
-            transition: width 0.6s ease;
-        }
     </style>
 </head>
 
@@ -1666,7 +1563,7 @@
             <div class="flex items-center justify-between">
                 <!-- Logo - Left -->
                 <div class="flex items-center">
-                    <img src="Layer1.png" alt="Remote Employees Logo" class="h-11 w-auto">
+                    <img src="../Layer_1.png" alt="Remote Employees Logo" class="h-11 w-auto">
                 </div>
 
                 <!-- Centered Title -->
@@ -1741,21 +1638,18 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
                 <!-- Card 1 -->
-                <div class="card overflow-hidden shadow-2xl relative h-[480px]">
+               <div class="card overflow-hidden shadow-2xl relative h-[480px]">
                     <div class="image-overlay h-full">
                         <img src="https://www.sideqik.com/wp-content/uploads/2021/12/professional-smiling-esport-gamer-girl-live-stream-2021-08-28-01-21-32-utc-1030x687.jpg" 
                              alt="John D." 
                              class="w-full h-full object-cover" />
                         
-                        <!-- Top Bar with LIVE Badge and Action Buttons -->
                         <div class="absolute top-6 left-6 right-6 flex items-center justify-between">
-                            <!-- LIVE Badge -->
                             <div class="flex items-center gap-2 bg-red-500 text-white px-4 py-2 text-xs font-bold shadow-lg" style="border-radius: 8px;">
                                 <div class="w-2 h-2 bg-white rounded-full animate-pulse"></div>
                                 LIVE
                             </div>
 
-                            <!-- Action Buttons -->
                             <div class="flex gap-3">
                                 <button class="bg-emerald-500 hover:bg-emerald-600 text-white px-3 py-1.5 font-bold transition-all shadow-lg text-sm flex items-center gap-1" style="border-radius: 6px;">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -1772,9 +1666,7 @@
                             </div>
                         </div>
 
-                        <!-- Bottom Info -->
                         <div class="absolute bottom-0 left-0 right-0 overlay-gradient p-6">
-                            <!-- Profile -->
                             <div class="flex items-center gap-3 mb-6">
                                 <img src="https://i.pravatar.cc/100?img=5" alt="John D" class="w-16 h-16 rounded-full border-2 border-white shadow-lg flex-shrink-0" />
                                 <div class="flex-1 min-w-0">
@@ -1787,22 +1679,33 @@
                                 </div>
                             </div>
 
-                            <!-- Modal Buttons with Liquid Glass Effect and Larger Icons -->
                             <div class="buttons-grid">
                                 <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#3b82f6"><path d="M12 0.5L13.5 6.5L12 12.5L10.5 6.5L12 0.5Z"/><path d="M12 11.5L13.5 17.5L12 23.5L10.5 17.5L12 11.5Z"/><path d="M0.5 12L6.5 10.5L12.5 12L6.5 13.5L0.5 12Z"/><path d="M11.5 12L17.5 10.5L23.5 12L17.5 13.5L11.5 12Z"/><path d="M4 4L8 8L4 12L0 8L4 4Z" opacity="0.5"/><path d="M20 4L24 8L20 12L16 8L20 4Z" opacity="0.5"/><path d="M4 12L8 16L4 20L0 16L4 12Z" opacity="0.5"/><path d="M20 12L24 16L20 20L16 16L20 12Z" opacity="0.5"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                        <polyline points="22 4 12 14.01 9 11.01"/>
+                                    </svg>
                                     AI
                                 </button>
                                 <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#a855f7"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 10L10.5 12.5L16 7" fill="white"/><line x1="8" y1="16" x2="16" y2="16" stroke="white" stroke-width="2"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="16 18 22 12 16 6"/>
+                                        <polyline points="8 6 2 12 8 18"/>
+                                    </svg>
                                     Responsibilities
                                 </button>
                                 <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f97316"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fb923c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                        <polyline points="22 4 12 14.01 9 11.01"/>
+                                    </svg>
                                     Tools
                                 </button>
                                 <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                        <polyline points="22 4 12 14.01 9 11.01"/>
+                                    </svg>
                                     Skills
                                 </button>
                             </div>
@@ -1856,22 +1759,34 @@
                                 </div>
                             </div>
 
-                            <!-- Modal Buttons with Liquid Glass Effect and Larger Icons -->
+                            <!-- Modal Buttons with IT-Focused Icons -->
                             <div class="buttons-grid">
                                 <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#3b82f6"><path d="M12 0.5L13.5 6.5L12 12.5L10.5 6.5L12 0.5Z"/><path d="M12 11.5L13.5 17.5L12 23.5L10.5 17.5L12 11.5Z"/><path d="M0.5 12L6.5 10.5L12.5 12L6.5 13.5L0.5 12Z"/><path d="M11.5 12L17.5 10.5L23.5 12L17.5 13.5L11.5 12Z"/><path d="M4 4L8 8L4 12L0 8L4 4Z" opacity="0.5"/><path d="M20 4L24 8L20 12L16 8L20 4Z" opacity="0.5"/><path d="M4 12L8 16L4 20L0 16L4 12Z" opacity="0.5"/><path d="M20 12L24 16L20 20L16 16L20 12Z" opacity="0.5"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="3"/>
+                                        <path d="M12 1v6m0 6v6M5.64 5.64l4.24 4.24m4.24 4.24l4.24 4.24M1 12h6m6 0h6M5.64 18.36l4.24-4.24m4.24-4.24l4.24-4.24"/>
+                                    </svg>
                                     AI
                                 </button>
                                 <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#a855f7"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 10L10.5 12.5L16 7" fill="white"/><line x1="8" y1="16" x2="16" y2="16" stroke="white" stroke-width="2"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="16 18 22 12 16 6"/>
+                                        <polyline points="8 6 2 12 8 18"/>
+                                    </svg>
                                     Responsibilities
                                 </button>
                                 <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f97316"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fb923c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="3"/>
+                                        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                                    </svg>
                                     Tools
                                 </button>
                                 <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                        <polyline points="22 4 12 14.01 9 11.01"/>
+                                    </svg>
                                     Skills
                                 </button>
                             </div>
@@ -1925,22 +1840,34 @@
                                 </div>
                             </div>
 
-                            <!-- Modal Buttons with Liquid Glass Effect and Larger Icons -->
+                            <!-- Modal Buttons with IT-Focused Icons -->
                             <div class="buttons-grid">
                                 <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#3b82f6"><path d="M12 0.5L13.5 6.5L12 12.5L10.5 6.5L12 0.5Z"/><path d="M12 11.5L13.5 17.5L12 23.5L10.5 17.5L12 11.5Z"/><path d="M0.5 12L6.5 10.5L12.5 12L6.5 13.5L0.5 12Z"/><path d="M11.5 12L17.5 10.5L23.5 12L17.5 13.5L11.5 12Z"/><path d="M4 4L8 8L4 12L0 8L4 4Z" opacity="0.5"/><path d="M20 4L24 8L20 12L16 8L20 4Z" opacity="0.5"/><path d="M4 12L8 16L4 20L0 16L4 12Z" opacity="0.5"/><path d="M20 12L24 16L20 20L16 16L20 12Z" opacity="0.5"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="3"/>
+                                        <path d="M12 1v6m0 6v6M5.64 5.64l4.24 4.24m4.24 4.24l4.24 4.24M1 12h6m6 0h6M5.64 18.36l4.24-4.24m4.24-4.24l4.24-4.24"/>
+                                    </svg>
                                     AI
                                 </button>
                                 <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#a855f7"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 10L10.5 12.5L16 7" fill="white"/><line x1="8" y1="16" x2="16" y2="16" stroke="white" stroke-width="2"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="16 18 22 12 16 6"/>
+                                        <polyline points="8 6 2 12 8 18"/>
+                                    </svg>
                                     Responsibilities
                                 </button>
                                 <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f97316"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fb923c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="3"/>
+                                        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                                    </svg>
                                     Tools
                                 </button>
                                 <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                        <polyline points="22 4 12 14.01 9 11.01"/>
+                                    </svg>
                                     Skills
                                 </button>
                             </div>
@@ -1993,21 +1920,34 @@
                                 </div>
                             </div>
 
+                            <!-- Modal Buttons with IT-Focused Icons -->
                             <div class="buttons-grid">
                                 <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#3b82f6"><path d="M12 0.5L13.5 6.5L12 12.5L10.5 6.5L12 0.5Z"/><path d="M12 11.5L13.5 17.5L12 23.5L10.5 17.5L12 11.5Z"/><path d="M0.5 12L6.5 10.5L12.5 12L6.5 13.5L0.5 12Z"/><path d="M11.5 12L17.5 10.5L23.5 12L17.5 13.5L11.5 12Z"/><path d="M4 4L8 8L4 12L0 8L4 4Z" opacity="0.5"/><path d="M20 4L24 8L20 12L16 8L20 4Z" opacity="0.5"/><path d="M4 12L8 16L4 20L0 16L4 12Z" opacity="0.5"/><path d="M20 12L24 16L20 20L16 16L20 12Z" opacity="0.5"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="3"/>
+                                        <path d="M12 1v6m0 6v6M5.64 5.64l4.24 4.24m4.24 4.24l4.24 4.24M1 12h6m6 0h6M5.64 18.36l4.24-4.24m4.24-4.24l4.24-4.24"/>
+                                    </svg>
                                     AI
                                 </button>
                                 <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#a855f7"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 10L10.5 12.5L16 7" fill="white"/><line x1="8" y1="16" x2="16" y2="16" stroke="white" stroke-width="2"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="16 18 22 12 16 6"/>
+                                        <polyline points="8 6 2 12 8 18"/>
+                                    </svg>
                                     Responsibilities
                                 </button>
                                 <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f97316"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fb923c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="3"/>
+                                        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                                    </svg>
                                     Tools
                                 </button>
                                 <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                        <polyline points="22 4 12 14.01 9 11.01"/>
+                                    </svg>
                                     Skills
                                 </button>
                             </div>
@@ -2060,21 +2000,34 @@
                                 </div>
                             </div>
 
+                            <!-- Modal Buttons with IT-Focused Icons -->
                             <div class="buttons-grid">
                                 <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#3b82f6"><path d="M12 0.5L13.5 6.5L12 12.5L10.5 6.5L12 0.5Z"/><path d="M12 11.5L13.5 17.5L12 23.5L10.5 17.5L12 11.5Z"/><path d="M0.5 12L6.5 10.5L12.5 12L6.5 13.5L0.5 12Z"/><path d="M11.5 12L17.5 10.5L23.5 12L17.5 13.5L11.5 12Z"/><path d="M4 4L8 8L4 12L0 8L4 4Z" opacity="0.5"/><path d="M20 4L24 8L20 12L16 8L20 4Z" opacity="0.5"/><path d="M4 12L8 16L4 20L0 16L4 12Z" opacity="0.5"/><path d="M20 12L24 16L20 20L16 16L20 12Z" opacity="0.5"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="3"/>
+                                        <path d="M12 1v6m0 6v6M5.64 5.64l4.24 4.24m4.24 4.24l4.24 4.24M1 12h6m6 0h6M5.64 18.36l4.24-4.24m4.24-4.24l4.24-4.24"/>
+                                    </svg>
                                     AI
                                 </button>
                                 <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#a855f7"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 10L10.5 12.5L16 7" fill="white"/><line x1="8" y1="16" x2="16" y2="16" stroke="white" stroke-width="2"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="16 18 22 12 16 6"/>
+                                        <polyline points="8 6 2 12 8 18"/>
+                                    </svg>
                                     Responsibilities
                                 </button>
                                 <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f97316"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fb923c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="3"/>
+                                        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                                    </svg>
                                     Tools
                                 </button>
                                 <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                        <polyline points="22 4 12 14.01 9 11.01"/>
+                                    </svg>
                                     Skills
                                 </button>
                             </div>
@@ -2127,21 +2080,34 @@
                                 </div>
                             </div>
 
+                            <!-- Modal Buttons with IT-Focused Icons -->
                             <div class="buttons-grid">
                                 <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#3b82f6"><path d="M12 0.5L13.5 6.5L12 12.5L10.5 6.5L12 0.5Z"/><path d="M12 11.5L13.5 17.5L12 23.5L10.5 17.5L12 11.5Z"/><path d="M0.5 12L6.5 10.5L12.5 12L6.5 13.5L0.5 12Z"/><path d="M11.5 12L17.5 10.5L23.5 12L17.5 13.5L11.5 12Z"/><path d="M4 4L8 8L4 12L0 8L4 4Z" opacity="0.5"/><path d="M20 4L24 8L20 12L16 8L20 4Z" opacity="0.5"/><path d="M4 12L8 16L4 20L0 16L4 12Z" opacity="0.5"/><path d="M20 12L24 16L20 20L16 16L20 12Z" opacity="0.5"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="3"/>
+                                        <path d="M12 1v6m0 6v6M5.64 5.64l4.24 4.24m4.24 4.24l4.24 4.24M1 12h6m6 0h6M5.64 18.36l4.24-4.24m4.24-4.24l4.24-4.24"/>
+                                    </svg>
                                     AI
                                 </button>
                                 <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#a855f7"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 10L10.5 12.5L16 7" fill="white"/><line x1="8" y1="16" x2="16" y2="16" stroke="white" stroke-width="2"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="16 18 22 12 16 6"/>
+                                        <polyline points="8 6 2 12 8 18"/>
+                                    </svg>
                                     Responsibilities
                                 </button>
                                 <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f97316"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fb923c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="3"/>
+                                        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                                    </svg>
                                     Tools
                                 </button>
                                 <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                        <polyline points="22 4 12 14.01 9 11.01"/>
+                                    </svg>
                                     Skills
                                 </button>
                             </div>
@@ -2194,21 +2160,34 @@
                                 </div>
                             </div>
 
+                            <!-- Modal Buttons with IT-Focused Icons -->
                             <div class="buttons-grid">
                                 <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#3b82f6"><path d="M12 0.5L13.5 6.5L12 12.5L10.5 6.5L12 0.5Z"/><path d="M12 11.5L13.5 17.5L12 23.5L10.5 17.5L12 11.5Z"/><path d="M0.5 12L6.5 10.5L12.5 12L6.5 13.5L0.5 12Z"/><path d="M11.5 12L17.5 10.5L23.5 12L17.5 13.5L11.5 12Z"/><path d="M4 4L8 8L4 12L0 8L4 4Z" opacity="0.5"/><path d="M20 4L24 8L20 12L16 8L20 4Z" opacity="0.5"/><path d="M4 12L8 16L4 20L0 16L4 12Z" opacity="0.5"/><path d="M20 12L24 16L20 20L16 16L20 12Z" opacity="0.5"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="3"/>
+                                        <path d="M12 1v6m0 6v6M5.64 5.64l4.24 4.24m4.24 4.24l4.24 4.24M1 12h6m6 0h6M5.64 18.36l4.24-4.24m4.24-4.24l4.24-4.24"/>
+                                    </svg>
                                     AI
                                 </button>
                                 <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#a855f7"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 10L10.5 12.5L16 7" fill="white"/><line x1="8" y1="16" x2="16" y2="16" stroke="white" stroke-width="2"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="16 18 22 12 16 6"/>
+                                        <polyline points="8 6 2 12 8 18"/>
+                                    </svg>
                                     Responsibilities
                                 </button>
                                 <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f97316"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fb923c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="3"/>
+                                        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                                    </svg>
                                     Tools
                                 </button>
                                 <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                        <polyline points="22 4 12 14.01 9 11.01"/>
+                                    </svg>
                                     Skills
                                 </button>
                             </div>
@@ -2261,21 +2240,34 @@
                                 </div>
                             </div>
 
+                            <!-- Modal Buttons with IT-Focused Icons -->
                             <div class="buttons-grid">
                                 <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#3b82f6"><path d="M12 0.5L13.5 6.5L12 12.5L10.5 6.5L12 0.5Z"/><path d="M12 11.5L13.5 17.5L12 23.5L10.5 17.5L12 11.5Z"/><path d="M0.5 12L6.5 10.5L12.5 12L6.5 13.5L0.5 12Z"/><path d="M11.5 12L17.5 10.5L23.5 12L17.5 13.5L11.5 12Z"/><path d="M4 4L8 8L4 12L0 8L4 4Z" opacity="0.5"/><path d="M20 4L24 8L20 12L16 8L20 4Z" opacity="0.5"/><path d="M4 12L8 16L4 20L0 16L4 12Z" opacity="0.5"/><path d="M20 12L24 16L20 20L16 16L20 12Z" opacity="0.5"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="3"/>
+                                        <path d="M12 1v6m0 6v6M5.64 5.64l4.24 4.24m4.24 4.24l4.24 4.24M1 12h6m6 0h6M5.64 18.36l4.24-4.24m4.24-4.24l4.24-4.24"/>
+                                    </svg>
                                     AI
                                 </button>
                                 <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#a855f7"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 10L10.5 12.5L16 7" fill="white"/><line x1="8" y1="16" x2="16" y2="16" stroke="white" stroke-width="2"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="16 18 22 12 16 6"/>
+                                        <polyline points="8 6 2 12 8 18"/>
+                                    </svg>
                                     Responsibilities
                                 </button>
                                 <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f97316"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fb923c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="3"/>
+                                        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                                    </svg>
                                     Tools
                                 </button>
                                 <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                        <polyline points="22 4 12 14.01 9 11.01"/>
+                                    </svg>
                                     Skills
                                 </button>
                             </div>
@@ -2328,21 +2320,34 @@
                                 </div>
                             </div>
 
+                            <!-- Modal Buttons with IT-Focused Icons -->
                             <div class="buttons-grid">
                                 <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#3b82f6"><path d="M12 0.5L13.5 6.5L12 12.5L10.5 6.5L12 0.5Z"/><path d="M12 11.5L13.5 17.5L12 23.5L10.5 17.5L12 11.5Z"/><path d="M0.5 12L6.5 10.5L12.5 12L6.5 13.5L0.5 12Z"/><path d="M11.5 12L17.5 10.5L23.5 12L17.5 13.5L11.5 12Z"/><path d="M4 4L8 8L4 12L0 8L4 4Z" opacity="0.5"/><path d="M20 4L24 8L20 12L16 8L20 4Z" opacity="0.5"/><path d="M4 12L8 16L4 20L0 16L4 12Z" opacity="0.5"/><path d="M20 12L24 16L20 20L16 16L20 12Z" opacity="0.5"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="3"/>
+                                        <path d="M12 1v6m0 6v6M5.64 5.64l4.24 4.24m4.24 4.24l4.24 4.24M1 12h6m6 0h6M5.64 18.36l4.24-4.24m4.24-4.24l4.24-4.24"/>
+                                    </svg>
                                     AI
                                 </button>
                                 <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#a855f7"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 10L10.5 12.5L16 7" fill="white"/><line x1="8" y1="16" x2="16" y2="16" stroke="white" stroke-width="2"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="16 18 22 12 16 6"/>
+                                        <polyline points="8 6 2 12 8 18"/>
+                                    </svg>
                                     Responsibilities
                                 </button>
                                 <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f97316"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fb923c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="3"/>
+                                        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                                    </svg>
                                     Tools
                                 </button>
                                 <button class="liquid-glass-btn flex items-center justify-center gap-1.5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                        <polyline points="22 4 12 14.01 9 11.01"/>
+                                    </svg>
                                     Skills
                                 </button>
                             </div>
@@ -2370,38 +2375,34 @@
                 </button>
             </div>
             <div class="modal-body">
-                <!-- ChatGPT Item -->
-                <div class="modal-item">
-                    <div class="modal-item-icon">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" alt="ChatGPT" style="width: 34px; height: 34px;">
+                <div class="tool-card" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(16, 185, 129, 0.05) 100%); border: 1px solid rgba(16, 185, 129, 0.2);">
+                    <div class="tool-header">
+                        <div class="tool-icon" style="background: #10B981;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" alt="ChatGPT" style="width: 32px; height: 32px;">
+                        </div>
+                        <div class="tool-info">
+                            <h3 class="tool-name">ChatGPT</h3>
+                            <p class="tool-details">AI conversation & code assistance</p>
+                        </div>
                     </div>
-                    <div class="modal-item-content">
-                        <h3 class="modal-item-title">ChatGPT</h3>
-                        <p class="modal-item-subtitle">AI conversation & code assistance</p>
-                    </div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="modal-item-arrow">
-                        <polyline points="9 18 15 12 9 6"></polyline>
-                    </svg>
                 </div>
 
-                <!-- Midjourney Item -->
-                <div class="modal-item">
-                    <div class="modal-item-icon">
-                        <img src="https://images.seeklogo.com/logo-png/50/1/midjourney-logo-png_seeklogo-501203.png" alt="Midjourney" style="width: 34px; height: 34px; object-fit: contain;">
+                <div class="tool-card" style="background: linear-gradient(135deg, rgba(168, 85, 247, 0.1) 0%, rgba(168, 85, 247, 0.05) 100%); border: 1px solid rgba(168, 85, 247, 0.2);">
+                    <div class="tool-header">
+                        <div class="tool-icon" style="background: #a855f7;">
+                            <img src="https://images.seeklogo.com/logo-png/50/1/midjourney-logo-png_seeklogo-501203.png" alt="Midjourney" style="width: 32px; height: 32px; object-fit: contain;">
+                        </div>
+                        <div class="tool-info">
+                            <h3 class="tool-name">Midjourney</h3>
+                            <p class="tool-details">AI image generation & design</p>
+                        </div>
                     </div>
-                    <div class="modal-item-content">
-                        <h3 class="modal-item-title">Midjourney</h3>
-                        <p class="modal-item-subtitle">AI image generation & design</p>
-                    </div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="modal-item-arrow">
-                        <polyline points="9 18 15 12 9 6"></polyline>
-                    </svg>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Tasks Modal -->
+    <!-- Tasks Modal - UPDATED TO MATCH SKILLS STYLE -->
     <div id="tasksModal" class="modal hidden">
         <div class="modal-content">
             <div class="modal-header">
@@ -2414,60 +2415,54 @@
                 </button>
             </div>
             <div class="modal-body">
-                <!-- Task 1 -->
-                <div class="task-item">
-                    <div class="task-check" style="background: #3b82f6;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-                            <line x1="9" y1="9" x2="15" y2="9"/>
-                            <line x1="9" y1="13" x2="15" y2="13"/>
-                            <line x1="9" y1="17" x2="13" y2="17"/>
-                        </svg>
-                    </div>
-                    <div class="task-content">
-                        <h3 class="task-title">Build Landing Pages</h3>
-                        <p class="task-description">Create responsive and modern landing pages with animations and interactive elements</p>
-                        <div class="task-tags">
-                            <span class="task-tag" style="background: rgba(59, 130, 246, 0.2); color: #93c5fd;">DESIGN</span>
-                            <span class="task-tag" style="background: rgba(139, 92, 246, 0.2); color: #c4b5fd;">DEVELOPMENT</span>
+                <!-- Task 1 - Blue gradient -->
+                <div class="task-item" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(59, 130, 246, 0.05) 100%); border: 1px solid rgba(59, 130, 246, 0.2);">
+                    <div class="task-header">
+                        <div class="task-icon" style="background: #3b82f6;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                <line x1="9" y1="9" x2="15" y2="9"/>
+                                <line x1="9" y1="13" x2="15" y2="13"/>
+                                <line x1="9" y1="17" x2="13" y2="17"/>
+                            </svg>
+                        </div>
+                        <div class="task-info">
+                            <h3 class="task-title">Build Landing Pages</h3>
+                            <p class="task-description">Create responsive and modern landing pages with animations and interactive elements</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Task 2 -->
-                <div class="task-item">
-                    <div class="task-check" style="background: #a855f7;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/>
-                        </svg>
-                    </div>
-                    <div class="task-content">
-                        <h3 class="task-title">Build Prototypes</h3>
-                        <p class="task-description">Develop interactive prototypes and wireframes for user testing and client presentations</p>
-                        <div class="task-tags">
-                            <span class="task-tag" style="background: rgba(168, 85, 247, 0.2); color: #d8b4fe;">PROTOTYPING</span>
-                            <span class="task-tag" style="background: rgba(236, 72, 153, 0.2); color: #f9a8d4;">UX</span>
+                <!-- Task 2 - Purple gradient -->
+                <div class="task-item" style="background: linear-gradient(135deg, rgba(168, 85, 247, 0.1) 0%, rgba(168, 85, 247, 0.05) 100%); border: 1px solid rgba(168, 85, 247, 0.2);">
+                    <div class="task-header">
+                        <div class="task-icon" style="background: #a855f7;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/>
+                            </svg>
+                        </div>
+                        <div class="task-info">
+                            <h3 class="task-title">Build Prototypes</h3>
+                            <p class="task-description">Develop interactive prototypes and wireframes for user testing and client presentations</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Task 3 -->
-                <div class="task-item">
-                    <div class="task-check" style="background: #ec4899;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="10"/>
-                            <circle cx="12" cy="8" r="1.5" fill="white"/>
-                            <circle cx="8.5" cy="13.5" r="1.5" fill="white"/>
-                            <circle cx="15.5" cy="13.5" r="1.5" fill="white"/>
-                            <path d="M12 16c-1.5 0-2.5 1-2.5 2.5h5c0-1.5-1-2.5-2.5-2.5z"/>
-                        </svg>
-                    </div>
-                    <div class="task-content">
-                        <h3 class="task-title">Create Logo Designs</h3>
-                        <p class="task-description">Design brand identities and logos that represent company values and vision</p>
-                        <div class="task-tags">
-                            <span class="task-tag" style="background: rgba(236, 72, 153, 0.2); color: #f9a8d4;">BRANDING</span>
-                            <span class="task-tag" style="background: rgba(245, 158, 11, 0.2); color: #fcd34d;">CREATIVE</span>
+                <!-- Task 3 - Pink gradient -->
+                <div class="task-item" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.1) 0%, rgba(236, 72, 153, 0.05) 100%); border: 1px solid rgba(236, 72, 153, 0.2);">
+                    <div class="task-header">
+                        <div class="task-icon" style="background: #ec4899;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"/>
+                                <circle cx="12" cy="8" r="1.5" fill="white"/>
+                                <circle cx="8.5" cy="13.5" r="1.5" fill="white"/>
+                                <circle cx="15.5" cy="13.5" r="1.5" fill="white"/>
+                                <path d="M12 16c-1.5 0-2.5 1-2.5 2.5h5c0-1.5-1-2.5-2.5-2.5z"/>
+                            </svg>
+                        </div>
+                        <div class="task-info">
+                            <h3 class="task-title">Create Logo Designs</h3>
+                            <p class="task-description">Design brand identities and logos that represent company values and vision</p>
                         </div>
                     </div>
                 </div>
@@ -2475,7 +2470,7 @@
         </div>
     </div>
 
-    <!-- Tools Modal -->
+    <!-- Tools Modal - MATCHING SKILLS STYLE -->
     <div id="toolsModal" class="modal hidden">
         <div class="modal-content">
             <div class="modal-header">
@@ -2488,441 +2483,408 @@
                 </button>
             </div>
             <div class="modal-body">
-                <!-- Photoshop -->
-                <div class="tool-item">
-                    <div class="tool-icon" style="background: #001e36;">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" alt="Photoshop" style="width: 42px; height: 42px;">
-                    </div>
-                    <div class="tool-content">
-                        <h3 class="tool-title">Photoshop</h3>
-                        <p class="tool-description">Image editing & photo compositing</p>
-                        <div class="progress-container">
-                            <div class="progress-bar" style="background: linear-gradient(90deg, #3b82f6 0%, #3b82f6 90%, rgba(255,255,255,0.1) 90%);"></div>
-                            <span class="progress-text">90%</span>
+                <!-- Photoshop - Dark Blue/Navy gradient -->
+                <div class="tool-card" style="background: linear-gradient(135deg, rgba(0, 30, 54, 0.15) 0%, rgba(0, 30, 54, 0.08) 100%); border: 1px solid rgba(0, 30, 54, 0.3);">
+                    <div class="tool-header">
+                        <div class="tool-icon" style="background: #001e36;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" alt="Photoshop" style="width: 32px; height: 32px;">
                         </div>
+                        <div class="tool-info">
+                            <h3 class="tool-name">Photoshop</h3>
+                            <p class="tool-details">Image editing & compositing</p>
+</div>
+</div>
+</div>
+<!-- Figma - Purple/Magenta gradient -->
+            <div class="tool-card" style="background: linear-gradient(135deg, rgba(168, 85, 247, 0.1) 0%, rgba(168, 85, 247, 0.05) 100%); border: 1px solid rgba(168, 85, 247, 0.2);">
+                <div class="tool-header">
+                    <div class="tool-icon" style="background: #a855f7;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Figma" style="width: 32px; height: 32px;">
+                    </div>
+                    <div class="tool-info">
+                        <h3 class="tool-name">Figma</h3>
+                        <p class="tool-details">UI/UX design & prototyping</p>
                     </div>
                 </div>
+            </div>
 
-                <!-- Figma -->
-                <div class="tool-item">
-                    <div class="tool-icon" style="background: rgba(255, 255, 255, 0.05);">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Figma" style="width: 42px; height: 42px;">
-                    </div>
-                    <div class="tool-content">
-                        <h3 class="tool-title">Figma</h3>
-                        <p class="tool-description">UI/UX design & prototyping</p>
-                        <div class="progress-container">
-                            <div class="progress-bar" style="background: linear-gradient(90deg, #a855f7 0%, #a855f7 95%, rgba(255,255,255,0.1) 95%);"></div>
-                            <span class="progress-text">95%</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- After Effects -->
-                <div class="tool-item">
+            <!-- After Effects - Deep Purple/Blue gradient -->
+            <div class="tool-card" style="background: linear-gradient(135deg, rgba(0, 0, 91, 0.15) 0%, rgba(0, 0, 91, 0.08) 100%); border: 1px solid rgba(0, 0, 91, 0.3);">
+                <div class="tool-header">
                     <div class="tool-icon" style="background: #00005b;">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Adobe_After_Effects_CC_icon.svg" alt="After Effects" style="width: 42px; height: 42px;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Adobe_After_Effects_CC_icon.svg" alt="After Effects" style="width: 32px; height: 32px;">
                     </div>
-                    <div class="tool-content">
-                        <h3 class="tool-title">After Effects</h3>
-                        <p class="tool-description">Motion graphics & animation</p>
-                        <div class="progress-container">
-                            <div class="progress-bar" style="background: linear-gradient(90deg, #ec4899 0%, #ec4899 85%, rgba(255,255,255,0.1) 85%);"></div>
-                            <span class="progress-text">85%</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Overall Mastery -->
-                <div class="mastery-section">
-                    <div class="mastery-header">
-                        <h3 class="mastery-title">Overall Mastery</h3>
-                        <span class="mastery-level">Advanced</span>
-                    </div>
-                    <div class="mastery-progress">
-                        <div class="mastery-bar"></div>
+                    <div class="tool-info">
+                        <h3 class="tool-name">After Effects</h3>
+                        <p class="tool-details">Motion graphics & animation</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-    <!-- Skills Modal -->
-    <div id="skillsModal" class="modal hidden">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2 class="modal-title">Technical Skills</h2>
-                <button class="modal-close close-skills-modal">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <line x1="18" y1="6" x2="6" y2="18"></line>
-                        <line x1="6" y1="6" x2="18" y2="18"></line>
-                    </svg>
-                </button>
+<!-- Skills Modal -->
+<div id="skillsModal" class="modal hidden">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 class="modal-title">Technical Skills</h2>
+            <button class="modal-close close-skills-modal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        <div class="modal-body">
+            <!-- JavaScript -->
+            <div class="skill-card" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(59, 130, 246, 0.05) 100%); border: 1px solid rgba(59, 130, 246, 0.2);">
+                <div class="skill-header">
+                    <div class="skill-icon" style="background: #3b82f6;">
+                        <span style="color: white; font-weight: 700; font-size: 18px;">JS</span>
+                    </div>
+                    <div class="skill-info">
+                        <h3 class="skill-name">JavaScript</h3>
+                        <p class="skill-details">ES6+, TypeScript</p>
+                    </div>
+                </div>
             </div>
-            <div class="modal-body">
-                <!-- JavaScript -->
-                <div class="skill-card" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(59, 130, 246, 0.05) 100%); border: 1px solid rgba(59, 130, 246, 0.2);">
-                    <div class="skill-header">
-                        <div class="skill-icon" style="background: #3b82f6;">
-                            <span style="color: white; font-weight: 700; font-size: 18px;">JS</span>
-                        </div>
-                        <div class="skill-info">
-                            <h3 class="skill-name">JavaScript</h3>
-                            <p class="skill-details">ES6+, TypeScript</p>
-                        </div>
-                        <span class="skill-percentage" style="color: #60a5fa;">95%</span>
+
+            <!-- React -->
+            <div class="skill-card" style="background: linear-gradient(135deg, rgba(6, 182, 212, 0.1) 0%, rgba(6, 182, 212, 0.05) 100%); border: 1px solid rgba(6, 182, 212, 0.2);">
+                <div class="skill-header">
+                    <div class="skill-icon" style="background: #06b6d4;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <ellipse cx="12" cy="12" rx="10" ry="4"></ellipse>
+                            <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"></ellipse>
+                            <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"></ellipse>
+                        </svg>
                     </div>
-                    <div class="skill-progress-bar">
-                        <div class="skill-progress-fill" style="width: 95%; background: #3b82f6;"></div>
+                    <div class="skill-info">
+                        <h3 class="skill-name">React</h3>
+                        <p class="skill-details">Hooks, Context, Redux</p>
                     </div>
                 </div>
+            </div>
 
-                <!-- React -->
-                <div class="skill-card" style="background: linear-gradient(135deg, rgba(6, 182, 212, 0.1) 0%, rgba(6, 182, 212, 0.05) 100%); border: 1px solid rgba(6, 182, 212, 0.2);">
-                    <div class="skill-header">
-                        <div class="skill-icon" style="background: #06b6d4;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-                                <circle cx="12" cy="12" r="3"></circle>
-                                <ellipse cx="12" cy="12" rx="10" ry="4"></ellipse>
-                                <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"></ellipse>
-                                <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"></ellipse>
-                            </svg>
-                        </div>
-                        <div class="skill-info">
-                            <h3 class="skill-name">React</h3>
-                            <p class="skill-details">Hooks, Context, Redux</p>
-                        </div>
-                        <span class="skill-percentage" style="color: #22d3ee;">92%</span>
+            <!-- UI/UX Design -->
+            <div class="skill-card" style="background: linear-gradient(135deg, rgba(168, 85, 247, 0.1) 0%, rgba(168, 85, 247, 0.05) 100%); border: 1px solid rgba(168, 85, 247, 0.2);">
+                <div class="skill-header">
+                    <div class="skill-icon" style="background: #a855f7;">
+                        <span style="color: white; font-weight: 700; font-size: 18px;">UI</span>
                     </div>
-                    <div class="skill-progress-bar">
-                        <div class="skill-progress-fill" style="width: 92%; background: #06b6d4;"></div>
+                    <div class="skill-info">
+                        <h3 class="skill-name">UI/UX Design</h3>
+                        <p class="skill-details">Wireframes, Prototypes</p>
                     </div>
                 </div>
+            </div>
 
-                <!-- UI/UX Design -->
-                <div class="skill-card" style="background: linear-gradient(135deg, rgba(168, 85, 247, 0.1) 0%, rgba(168, 85, 247, 0.05) 100%); border: 1px solid rgba(168, 85, 247, 0.2);">
-                    <div class="skill-header">
-                        <div class="skill-icon" style="background: #a855f7;">
-                            <span style="color: white; font-weight: 700; font-size: 18px;">UI</span>
-                        </div>
-                        <div class="skill-info">
-                            <h3 class="skill-name">UI/UX Design</h3>
-                            <p class="skill-details">Wireframes, Prototypes</p>
-                        </div>
-                        <span class="skill-percentage" style="color: #c084fc;">88%</span>
+            <!-- HTML/CSS -->
+            <div class="skill-card" style="background: linear-gradient(135deg, rgba(249, 115, 22, 0.1) 0%, rgba(249, 115, 22, 0.05) 100%); border: 1px solid rgba(249, 115, 22, 0.2);">
+                <div class="skill-header">
+                    <div class="skill-icon" style="background: #f97316;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
                     </div>
-                    <div class="skill-progress-bar">
-                        <div class="skill-progress-fill" style="width: 88%; background: #a855f7;"></div>
-                    </div>
-                </div>
-
-                <!-- HTML/CSS -->
-                <div class="skill-card" style="background: linear-gradient(135deg, rgba(249, 115, 22, 0.1) 0%, rgba(249, 115, 22, 0.05) 100%); border: 1px solid rgba(249, 115, 22, 0.2);">
-                    <div class="skill-header">
-                        <div class="skill-icon" style="background: #f97316;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <polyline points="16 18 22 12 16 6"></polyline>
-                                <polyline points="8 6 2 12 8 18"></polyline>
-                            </svg>
-                        </div>
-                        <div class="skill-info">
-                            <h3 class="skill-name">HTML/CSS</h3>
-                            <p class="skill-details">Responsive, Tailwind</p>
-                        </div>
-                        <span class="skill-percentage" style="color: #fb923c;">98%</span>
-                    </div>
-                    <div class="skill-progress-bar">
-                        <div class="skill-progress-fill" style="width: 98%; background: #f97316;"></div>
+                    <div class="skill-info">
+                        <h3 class="skill-name">HTML/CSS</h3>
+                        <p class="skill-details">Responsive, Tailwind</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-    <!-- Muted Sophisticated Footer -->
-    <footer class="py-10 bg-gray-900 border-t border-gray-800">
-        <div class="max-w-[1800px] mx-auto px-4 md:px-6 lg:px-8">
-            <!-- Main Footer Content -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12 mb-8">
+<!-- Muted Sophisticated Footer -->
+<footer class="py-10 bg-gray-900 border-t border-gray-800">
+    <div class="max-w-[1800px] mx-auto px-4 md:px-6 lg:px-8">
+        <!-- Main Footer Content -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12 mb-8">
+            
+            <!-- Brand Column - Spans 2 columns -->
+            <div class="lg:col-span-2">
+                <div class="flex items-center gap-3 mb-6">
+                    <img src="../Layer_1.png" alt="Remote Employees Logo" class="h-11 w-auto">
+                    <span class="text-lg font-bold tracking-tight text-gray-100">REMOTE EMPLOYEES</span>
+                </div>
+                <p class="text-sm text-gray-400 mb-8 max-w-xs font-light leading-relaxed">
+                    Connecting exceptional remote talent with forward-thinking companies. Building the future of work, one connection at a time.
+                </p>
                 
-                <!-- Brand Column - Spans 2 columns -->
-                <div class="lg:col-span-2">
-                    <div class="flex items-center gap-3 mb-6">
-                        <img src="Layer1.png" alt="Remote Employees Logo" class="h-11 w-auto">
-                        <span class="text-lg font-bold tracking-tight text-gray-100">REMOTE EMPLOYEES</span>
-                    </div>
-                    <p class="text-sm text-gray-400 mb-8 max-w-xs font-light leading-relaxed">
-                        Connecting exceptional remote talent with forward-thinking companies. Building the future of work, one connection at a time.
-                    </p>
-                    
-                    <!-- Newsletter -->
-                    <div class="mb-8">
-                        <h4 class="text-sm font-medium mb-3 text-gray-300">Stay Updated</h4>
-                        <div class="flex gap-3">
-                            <input 
-                                type="email" 
-                                placeholder="Enter your email" 
-                                class="form-input form-input-medium flex-1"
-                            />
-                            <button class="btn btn-primary btn-medium">
-                                Subscribe
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- Social Links -->
-                    <div class="flex items-center gap-3">
-                        <a href="#" class="w-10 h-10 bg-gray-800 border border-gray-700 rounded-lg flex items-center justify-center hover:bg-gray-700 hover:border-gray-600 smooth-transition">
-                            <i data-lucide="twitter" class="h-4 w-4 text-gray-400"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 bg-gray-800 border border-gray-700 rounded-lg flex items-center justify-center hover:bg-gray-700 hover:border-gray-600 smooth-transition">
-                            <i data-lucide="linkedin" class="h-4 w-4 text-gray-400"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 bg-gray-800 border border-gray-700 rounded-lg flex items-center justify-center hover:bg-gray-700 hover:border-gray-600 smooth-transition">
-                            <i data-lucide="github" class="h-4 w-4 text-gray-400"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 bg-gray-800 border border-gray-700 rounded-lg flex items-center justify-center hover:bg-gray-700 hover:border-gray-600 smooth-transition">
-                            <i data-lucide="instagram" class="h-4 w-4 text-gray-400"></i>
-                        </a>
+                <!-- Newsletter -->
+                <div class="mb-8">
+                    <h4 class="text-sm font-medium mb-3 text-gray-300">Stay Updated</h4>
+                    <div class="flex gap-3">
+                        <input 
+                            type="email" 
+                            placeholder="Enter your email" 
+                            class="form-input form-input-medium flex-1"
+                        />
+                        <button class="btn btn-primary btn-medium">
+                            Subscribe
+                        </button>
                     </div>
                 </div>
 
-                <!-- Platform Column -->
-                <div>
-                    <h3 class="text-sm font-medium mb-6 text-gray-300">Platform</h3>
-                    <ul class="space-y-3">
-                        <li><a href="#" class="text-sm text-gray-400 hover:text-gray-200 smooth-transition">Browse Talent</a></li>
-                        <li><a href="#" class="text-sm text-gray-400 hover:text-gray-200 smooth-transition">How It Works</a></li>
-                        <li><a href="#" class="text-sm text-gray-400 hover:text-gray-200 smooth-transition">Pricing Plans</a></li>
-                        <li><a href="#" class="text-sm text-gray-400 hover:text-gray-200 smooth-transition">Enterprise</a></li>
-                        <li><a href="#" class="text-sm text-gray-400 hover:text-gray-200 smooth-transition">Success Stories</a></li>
-                    </ul>
-                </div>
-
-                <!-- Resources Column -->
-                <div>
-                    <h3 class="text-sm font-medium mb-6 text-gray-300">Resources</h3>
-                    <ul class="space-y-3">
-                        <li><a href="#" class="text-sm text-gray-400 hover:text-gray-200 smooth-transition">Blog</a></li>
-                        <li><a href="#" class="text-sm text-gray-400 hover:text-gray-200 smooth-transition">Help Center</a></li>
-                        <li><a href="#" class="text-sm text-gray-400 hover:text-gray-200 smooth-transition">Guides</a></li>
-                        <li><a href="#" class="text-sm text-gray-400 hover:text-gray-200 smooth-transition">Webinars</a></li>
-                        <li><a href="#" class="text-sm text-gray-400 hover:text-gray-200 smooth-transition">Community</a></li>
-                    </ul>
-                </div>
-
-                <!-- Company Column -->
-                <div>
-                    <h3 class="text-sm font-medium mb-6 text-gray-300">Company</h3>
-                    <ul class="space-y-3">
-                        <li><a href="#" class="text-sm text-gray-400 hover:text-gray-200 smooth-transition">About Us</a></li>
-                        <li><a href="#" class="text-sm text-gray-400 hover:text-gray-200 smooth-transition">Careers</a></li>
-                        <li><a href="#" class="text-sm text-gray-400 hover:text-gray-200 smooth-transition">Press Kit</a></li>
-                        <li><a href="#" class="text-sm text-gray-400 hover:text-gray-200 smooth-transition">Contact</a></li>
-                        <li><a href="#" class="text-sm text-gray-400 hover:text-gray-200 smooth-transition">Partners</a></li>
-                    </ul>
-                </div>
-
-                <!-- Legal Column -->
-                <div>
-                    <h3 class="text-sm font-medium mb-6 text-gray-300">Legal</h3>
-                    <ul class="space-y-3">
-                        <li><a href="#" class="text-sm text-gray-400 hover:text-gray-200 smooth-transition">Privacy Policy</a></li>
-                        <li><a href="#" class="text-sm text-gray-400 hover:text-gray-200 smooth-transition">Terms of Service</a></li>
-                        <li><a href="#" class="text-sm text-gray-400 hover:text-gray-200 smooth-transition">Cookie Policy</a></li>
-                        <li><a href="#" class="text-sm text-gray-400 hover:text-gray-200 smooth-transition">GDPR</a></li>
-                        <li><a href="#" class="text-sm text-gray-400 hover:text-gray-200 smooth-transition">Licenses</a></li>
-                    </ul>
+                <!-- Social Links -->
+                <div class="flex items-center gap-3">
+                    <a href="#" class="w-10 h-10 bg-gray-800 border border-gray-700 rounded-lg flex items-center justify-center hover:bg-gray-700 hover:border-gray-600 smooth-transition">
+                        <i data-lucide="twitter" class="h-4 w-4 text-gray-400"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 bg-gray-800 border border-gray-700 rounded-lg flex items-center justify-center hover:bg-gray-700 hover:border-gray-600 smooth-transition">
+                        <i data-lucide="linkedin" class="h-4 w-4 text-gray-400"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 bg-gray-800 border border-gray-700 rounded-lg flex items-center justify-center hover:bg-gray-700 hover:border-gray-600 smooth-transition">
+                        <i data-lucide="github" class="h-4 w-4 text-gray-400"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 bg-gray-800 border border-gray-700 rounded-lg flex items-center justify-center hover:bg-gray-700 hover:border-gray-600 smooth-transition">
+                        <i data-lucide="instagram" class="h-4 w-4 text-gray-400"></i>
+                    </a>
                 </div>
             </div>
 
-            <!-- Bottom Bar -->
-            <div class="pt-6 border-t border-gray-800">
-                <div class="flex flex-col md:flex-row justify-between items-center gap-6">
-                    <div class="text-xs text-gray-500">
-                        © 2025 Remote Employees. All rights reserved.
+            <!-- Platform Column -->
+            <div>
+                <h3 class="text-sm font-medium mb-6 text-gray-300">Platform</h3>
+                <ul class="space-y-3">
+                    <li><a href="#" class="text-sm text-gray-400 hover:text-gray-200 smooth-transition">Browse Talent</a></li>
+                    <li><a href="#" class="text-sm text-gray-400 hover:text-gray-200 smooth-transition">How It Works</a></li>
+                    <li><a href="#" class="text-sm text-gray-400 hover:text-gray-200 smooth-transition">Pricing Plans</a></li>
+                    <li><a href="#" class="text-sm text-gray-400 hover:text-gray-200 smooth-transition">Enterprise</a></li>
+                    <li><a href="#" class="text-sm text-gray-400 hover:text-gray-200 smooth-transition">Success Stories</a></li>
+                </ul>
+            </div>
+
+            <!-- Resources Column -->
+            <div>
+                <h3 class="text-sm font-medium mb-6 text-gray-300">Resources</h3>
+                <ul class="space-y-3">
+                    <li><a href="#" class="text-sm text-gray-400 hover:text-gray-200 smooth-transition">Blog</a></li>
+                    <li><a href="#" class="text-sm text-gray-400 hover:text-gray-200 smooth-transition">Help Center</a></li>
+                    <li><a href="#" class="text-sm text-gray-400 hover:text-gray-200 smooth-transition">Guides</a></li>
+                    <li><a href="#" class="text-sm text-gray-400 hover:text-gray-200 smooth-transition">Webinars</a></li>
+                    <li><a href="#" class="text-sm text-gray-400 hover:text-gray-200 smooth-transition">Community</a></li>
+                </ul>
+            </div>
+
+            <!-- Company Column -->
+            <div>
+                <h3 class="text-sm font-medium mb-6 text-gray-300">Company</h3>
+                <ul class="space-y-3">
+                    <li><a href="#" class="text-sm text-gray-400 hover:text-gray-200 smooth-transition">About Us</a></li>
+                    <li><a href="#" class="text-sm text-gray-400 hover:text-gray-200 smooth-transition">Careers</a></li>
+                    <li><a href="#" class="text-sm text-gray-400 hover:text-gray-200 smooth-transition">Press Kit</a></li>
+                    <li><a href="#" class="text-sm text-gray-400 hover:text-gray-200 smooth-transition">Contact</a></li>
+                    <li><a href="#" class="text-sm text-gray-400 hover:text-gray-200 smooth-transition">Partners</a></li>
+                </ul>
+            </div>
+
+            <!-- Legal Column -->
+            <div>
+                <h3 class="text-sm font-medium mb-6 text-gray-300">Legal</h3>
+                <ul class="space-y-3">
+                    <li><a href="#" class="text-sm text-gray-400 hover:text-gray-200 smooth-transition">Privacy Policy</a></li>
+                    <li><a href="#" class="text-sm text-gray-400 hover:text-gray-200 smooth-transition">Terms of Service</a></li>
+                    <li><a href="#" class="text-sm text-gray-400 hover:text-gray-200 smooth-transition">Cookie Policy</a></li>
+                    <li><a href="#" class="text-sm text-gray-400 hover:text-gray-200 smooth-transition">GDPR</a></li>
+                    <li><a href="#" class="text-sm text-gray-400 hover:text-gray-200 smooth-transition">Licenses</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="pt-6 border-t border-gray-800">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="text-xs text-gray-500">
+                    © 2025 Remote Employees. All rights reserved.
+                </div>
+                <div class="flex items-center gap-8">
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="shield-check" class="h-4 w-4 text-gray-500"></i>
+                        <span class="text-xs text-gray-500">SSL Secured</span>
                     </div>
-                    <div class="flex items-center gap-8">
-                        <div class="flex items-center gap-2">
-                            <i data-lucide="shield-check" class="h-4 w-4 text-gray-500"></i>
-                            <span class="text-xs text-gray-500">SSL Secured</span>
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <i data-lucide="award" class="h-4 w-4 text-gray-500"></i>
-                            <span class="text-xs text-gray-500">ISO Certified</span>
-                        </div>
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="award" class="h-4 w-4 text-gray-500"></i>
+                        <span class="text-xs text-gray-500">ISO Certified</span>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
 
-    <script>
-        // Initialize Lucide icons
-        lucide.createIcons();
+<script>
+    // Initialize Lucide icons
+    lucide.createIcons();
 
-        // Category filter functionality
-        const categoryBtns = document.querySelectorAll('.category-btn');
-        categoryBtns.forEach(btn => {
-            btn.addEventListener('click', function() {
-                categoryBtns.forEach(b => b.classList.remove('active'));
-                this.classList.add('active');
-            });
+    // Category filter functionality
+    const categoryBtns = document.querySelectorAll('.category-btn');
+    categoryBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            categoryBtns.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
         });
+    });
 
-        // Mobile menu toggle
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-        if (mobileMenuBtn && mobileMenu) {
-            mobileMenuBtn.addEventListener('click', function() {
-                mobileMenu.classList.toggle('hidden');
+    // Mobile menu toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    if (mobileMenuBtn && mobileMenu) {
+        mobileMenuBtn.addEventListener('click', function() {
+            mobileMenu.classList.toggle('hidden');
+        });
+    }
+
+    // Modal functionality
+    const aiButtons = document.querySelectorAll('.liquid-glass-btn');
+    const aiModal = document.getElementById('aiModal');
+    const tasksModal = document.getElementById('tasksModal');
+    const toolsModal = document.getElementById('toolsModal');
+    const skillsModal = document.getElementById('skillsModal');
+    const modalBackdrop = document.getElementById('modalBackdrop');
+    const closeModalBtn = document.getElementById('closeModal');
+    const closeTasksModalBtn = document.querySelector('.close-tasks-modal');
+    const closeToolsModalBtn = document.querySelector('.close-tools-modal');
+    const closeSkillsModalBtn = document.querySelector('.close-skills-modal');
+
+    // Open AI modal when AI button is clicked
+    aiButtons.forEach(button => {
+        if (button.textContent.trim() === 'AI') {
+            button.addEventListener('click', function() {
+                aiModal.classList.remove('hidden');
+                modalBackdrop.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
             });
         }
+    });
 
-        // Modal functionality
-        const aiButtons = document.querySelectorAll('.liquid-glass-btn');
-        const aiModal = document.getElementById('aiModal');
-        const tasksModal = document.getElementById('tasksModal');
-        const toolsModal = document.getElementById('toolsModal');
-        const skillsModal = document.getElementById('skillsModal');
-        const modalBackdrop = document.getElementById('modalBackdrop');
-        const closeModalBtn = document.getElementById('closeModal');
-        const closeTasksModalBtn = document.querySelector('.close-tasks-modal');
-        const closeToolsModalBtn = document.querySelector('.close-tools-modal');
-        const closeSkillsModalBtn = document.querySelector('.close-skills-modal');
+    // Open Tasks modal when Responsibilities button is clicked
+    aiButtons.forEach(button => {
+        if (button.textContent.trim() === 'Responsibilities') {
+            button.addEventListener('click', function() {
+                tasksModal.classList.remove('hidden');
+                modalBackdrop.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            });
+        }
+    });
 
-        // Open AI modal when AI button is clicked
-        aiButtons.forEach(button => {
-            if (button.textContent.trim() === 'AI') {
-                button.addEventListener('click', function() {
-                    aiModal.classList.remove('hidden');
-                    modalBackdrop.classList.remove('hidden');
-                    document.body.style.overflow = 'hidden';
-                });
-            }
-        });
+    // Open Tools modal when Tools button is clicked
+    aiButtons.forEach(button => {
+        if (button.textContent.trim() === 'Tools') {
+            button.addEventListener('click', function() {
+                toolsModal.classList.remove('hidden');
+                modalBackdrop.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            });
+        }
+    });
 
-        // Open Tasks modal when Responsibilities button is clicked
-        aiButtons.forEach(button => {
-            if (button.textContent.trim() === 'Responsibilities') {
-                button.addEventListener('click', function() {
-                    tasksModal.classList.remove('hidden');
-                    modalBackdrop.classList.remove('hidden');
-                    document.body.style.overflow = 'hidden';
-                });
-            }
-        });
+    // Open Skills modal when Skills button is clicked
+    aiButtons.forEach(button => {
+        if (button.textContent.trim() === 'Skills') {
+            button.addEventListener('click', function() {
+                skillsModal.classList.remove('hidden');
+                modalBackdrop.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            });
+        }
+    });
 
-        // Open Tools modal when Tools button is clicked
-        aiButtons.forEach(button => {
-            if (button.textContent.trim() === 'Tools') {
-                button.addEventListener('click', function() {
-                    toolsModal.classList.remove('hidden');
-                    modalBackdrop.classList.remove('hidden');
-                    document.body.style.overflow = 'hidden';
-                });
-            }
-        });
+    // Close AI modal when close button is clicked
+    closeModalBtn.addEventListener('click', function() {
+        aiModal.classList.add('hidden');
+        modalBackdrop.classList.add('hidden');
+        document.body.style.overflow = '';
+    });
 
-        // Open Skills modal when Skills button is clicked
-        aiButtons.forEach(button => {
-            if (button.textContent.trim() === 'Skills') {
-                button.addEventListener('click', function() {
-                    skillsModal.classList.remove('hidden');
-                    modalBackdrop.classList.remove('hidden');
-                    document.body.style.overflow = 'hidden';
-                });
-            }
-        });
+    // Close Tasks modal when close button is clicked
+    closeTasksModalBtn.addEventListener('click', function() {
+        tasksModal.classList.add('hidden');
+        modalBackdrop.classList.add('hidden');
+        document.body.style.overflow = '';
+    });
 
-        // Close AI modal when close button is clicked
-        closeModalBtn.addEventListener('click', function() {
-            aiModal.classList.add('hidden');
-            modalBackdrop.classList.add('hidden');
-            document.body.style.overflow = '';
-        });
+    // Close Tools modal when close button is clicked
+    closeToolsModalBtn.addEventListener('click', function() {
+        toolsModal.classList.add('hidden');
+        modalBackdrop.classList.add('hidden');
+        document.body.style.overflow = '';
+    });
 
-        // Close Tasks modal when close button is clicked
-        closeTasksModalBtn.addEventListener('click', function() {
-            tasksModal.classList.add('hidden');
-            modalBackdrop.classList.add('hidden');
-            document.body.style.overflow = '';
-        });
+    // Close Skills modal when close button is clicked
+    closeSkillsModalBtn.addEventListener('click', function() {
+        skillsModal.classList.add('hidden');
+        modalBackdrop.classList.add('hidden');
+        document.body.style.overflow = '';
+    });
 
-        // Close Tools modal when close button is clicked
-        closeToolsModalBtn.addEventListener('click', function() {
-            toolsModal.classList.add('hidden');
-            modalBackdrop.classList.add('hidden');
-            document.body.style.overflow = '';
-        });
+    // Close modal when backdrop is clicked
+    modalBackdrop.addEventListener('click', function() {
+        aiModal.classList.add('hidden');
+        tasksModal.classList.add('hidden');
+        toolsModal.classList.add('hidden');
+        skillsModal.classList.add('hidden');
+        modalBackdrop.classList.add('hidden');
+        document.body.style.overflow = '';
+    });
 
-        // Close Skills modal when close button is clicked
-        closeSkillsModalBtn.addEventListener('click', function() {
-            skillsModal.classList.add('hidden');
-            modalBackdrop.classList.add('hidden');
-            document.body.style.overflow = '';
-        });
-
-        // Close modal when backdrop is clicked
-        modalBackdrop.addEventListener('click', function() {
-            aiModal.classList.add('hidden');
-            tasksModal.classList.add('hidden');
-            toolsModal.classList.add('hidden');
-            skillsModal.classList.add('hidden');
-            modalBackdrop.classList.add('hidden');
-            document.body.style.overflow = '';
-        });
-
-        // Close modal when Escape key is pressed
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') {
-                if (!aiModal.classList.contains('hidden') || !tasksModal.classList.contains('hidden') || !toolsModal.classList.contains('hidden') || !skillsModal.classList.contains('hidden')) {
-                    aiModal.classList.add('hidden');
-                    tasksModal.classList.add('hidden');
-                    toolsModal.classList.add('hidden');
-                    skillsModal.classList.add('hidden');
-                    modalBackdrop.classList.add('hidden');
-                    document.body.style.overflow = '';
-                }
-            }
-        });
-
-        // Theme toggle functionality
-        const themeToggle = document.getElementById('theme-toggle');
-        let isDark = localStorage.getItem('darkMode') === 'true';
-        
-        // Apply saved theme on load
-        if (isDark) {
-            document.body.classList.add('dark-mode');
-            if (themeToggle) {
-                const icon = themeToggle.querySelector('i');
-                icon.setAttribute('data-lucide', 'moon');
-                lucide.createIcons();
+    // Close modal when Escape key is pressed
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            if (!aiModal.classList.contains('hidden') || !tasksModal.classList.contains('hidden') || !toolsModal.classList.contains('hidden') || !skillsModal.classList.contains('hidden')) {
+                aiModal.classList.add('hidden');
+                tasksModal.classList.add('hidden');
+                toolsModal.classList.add('hidden');
+                skillsModal.classList.add('hidden');
+                modalBackdrop.classList.add('hidden');
+                document.body.style.overflow = '';
             }
         }
-        
+    });
+
+    // Theme toggle functionality
+    const themeToggle = document.getElementById('theme-toggle');
+    let isDark = localStorage.getItem('darkMode') === 'true';
+    
+    // Apply saved theme on load
+    if (isDark) {
+        document.body.classList.add('dark-mode');
         if (themeToggle) {
-            themeToggle.addEventListener('click', function() {
-                isDark = !isDark;
-                const icon = this.querySelector('i');
-                
-                if (isDark) {
-                    document.body.classList.add('dark-mode');
-                    icon.setAttribute('data-lucide', 'moon');
-                    localStorage.setItem('darkMode', 'true');
-                } else {
-                    document.body.classList.remove('dark-mode');
-                    icon.setAttribute('data-lucide', 'sun');
-                    localStorage.setItem('darkMode', 'false');
-                }
-                
-                lucide.createIcons();
-            });
+            const icon = themeToggle.querySelector('i');
+            icon.setAttribute('data-lucide', 'moon');
+            lucide.createIcons();
         }
-    </script>
+    }
+    
+    if (themeToggle) {
+        themeToggle.addEventListener('click', function() {
+            isDark = !isDark;
+            const icon = this.querySelector('i');
+            
+            if (isDark) {
+                document.body.classList.add('dark-mode');
+                icon.setAttribute('data-lucide', 'moon');
+                localStorage.setItem('darkMode', 'true');
+            } else {
+                document.body.classList.remove('dark-mode');
+                icon.setAttribute('data-lucide', 'sun');
+                localStorage.setItem('darkMode', 'false');
+            }
+            
+            lucide.createIcons();
+        });
+    }
+</script>
 </body>
 </html>
+
 
 
 
